@@ -1,21 +1,65 @@
-.preview {
-  height: 457px;
-  background-color: $gradient-preview;
-}
-
-.reset {
-  text-transform: uppercase;
-  height: 30px;
-  width: 75px;
-  color: $color-general-text;
-  font-family: $font-main;
-}
-
-.page {
-  height: 329px;
-  width: 240px;
-  box-shadow: 0 1px 10px 0 #000000, 0 1px 3px 0 rgba(0, 0, 0, 0.35);
-  &__title {
-    text-transform: uppercase;
-  }
-}
+    .preview {
+        height: 457px;
+        background-color: #bfcdd0;
+    }
+    
+    .reset {
+        margin-top: 38px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        height: 30px;
+        width: 75px;
+        color: $color-general-text;
+        font-family: $font-main;
+        font-size: 12px;
+        border-radius: 25px;
+        text-decoration: none;
+        background-color: transparent;
+        border-color: $color-button;
+    }
+    
+    .page {
+        border-radius: 2px;
+        height: 329px;
+        width: 240px;
+        box-shadow: 0 1px 10px 0 #000000, 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+        background-color: $color-button;
+        &__title {
+            text-transform: capitalize;
+            font-family: $font-principal;
+            font-weight: 600;
+            font-size: 18px;
+            color: $color-form-text;
+            padding: 21px 0 4px 20px;
+        }
+        &__subtitle {
+            font-family: $font-principal;
+            font-size: 16px;
+            color: $color-general-text;
+            padding: 0 0 10px 20px;
+        }
+        &__photo {
+            height: 200px;
+            width: 240px;
+        }
+        &__icons {
+            display: flex;
+            flex-direction: row;
+            padding: 0 52px 2px 10px;
+            &--icon {
+                color: $color-form-text;
+                padding: 10px;
+            }
+            &--circle {
+                border: solid 2px;
+                border-radius: 50px $color-form-border;
+            }
+        }
+    }
+    
+    .link-icon {
+        color: $color-form-text;
+        &:visited {
+            color: $color-form-text;
+        }
+    }
