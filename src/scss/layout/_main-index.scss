@@ -10,9 +10,11 @@
   @include normal-text() {
   }
   &__logo {
-    width: 250px;
-    height: 63px;
-    object-fit: contain;
+    &--img {
+      width: 250px;
+      height: 63px;
+      object-fit: contain;
+    }
   }
   &__text {
     margin: 35.4px 0 17.8px;
