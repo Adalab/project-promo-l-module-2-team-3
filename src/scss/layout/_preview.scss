@@ -1,0 +1,21 @@
+.preview {
+    height: 457px;
+    background-color: $gradient-preview;
+}
+
+.reset {
+    text-transform: uppercase;
+    height: 30px;
+    width: 75px;
+    color: $color-general-text;
+    font-family: $font-main;
+}
+
+.page {
+    height: 329px;
+    width: 240px;
+    box-shadow: 0 1px 10px 0 #000000, 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+    &__title {
+        text-transform: uppercase;
+    }
+}
