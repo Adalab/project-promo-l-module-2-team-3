@@ -1,5 +1,7 @@
-.page__header {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+.header {
+  margin: 31px auto 30px 40px;
+  &__logo {
+    width: 200px;
+    height: 50px;
+  }
 }

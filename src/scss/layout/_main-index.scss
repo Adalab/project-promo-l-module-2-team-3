@@ -17,14 +17,14 @@
   &__text {
     margin: 35.4px 0 17.8px;
     &--title {
-      font-family: Merriweather;
+      font-family: $font-index;
       font-size: 19.2px;
       font-weight: 900;
       margin: 0px 22.9px 0px 22.1px;
       color: $color-h1-index;
     }
     &--subtitle {
-      font-family: OpenSans;
+      font-family: $font-main;
       font-size: 12.8px;
       font-weight: normal;
       margin: 0px 1.6px 0px 1.6px;
@@ -43,10 +43,14 @@
     grid-template-rows: repeat(1, 1fr);
     justify-items: center;
     &--text {
-      font-family: OpenSans;
+      font-family: $font-main;
       font-size: 12.8px;
       font-weight: normal;
       color: $color-general-text;
+    }
+    &--icon {
+      color: $color-accent;
+      font-size: 22.4px;
     }
   }
   &__btn {
@@ -63,4 +67,12 @@
     color: $color-button;
     text-decoration: none;
   }
+}
+.far {
+  width: 32px;
+  height: 26px;
+}
+.fas {
+  width: 25px;
+  height: 26px;
 }
