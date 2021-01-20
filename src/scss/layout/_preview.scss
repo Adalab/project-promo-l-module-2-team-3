@@ -45,14 +45,15 @@
         &__icons {
             display: flex;
             flex-direction: row;
-            padding: 0 52px 2px 10px;
             &--icon {
+                padding: 0 52px 2px 10px;
+                height: 32px;
+                width: 32px;
+                border: solid 2px $color-form-border;
+                border-radius: 50%;
                 color: $color-form-text;
                 padding: 10px;
-            }
-            &--circle {
-                border: solid 2px;
-                border-radius: 50px $color-form-border;
+                text-decoration: none;
             }
         }
     }
