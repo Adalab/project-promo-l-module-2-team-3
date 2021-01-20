@@ -9,26 +9,39 @@
   padding: 0 35px;
   @include normal-text() {
   }
+  @include tablet() {
+    padding: 0;
+  }
   &__logo {
-    width: 250px;
-    height: 63px;
-    object-fit: contain;
+    &--img {
+      width: 250px;
+      height: 63px;
+      object-fit: contain;
+    }
   }
   &__text {
     margin: 35.4px 0 17.8px;
+    @include tablet() {
+      margin: 31px 0 27px;
+    }
     &--title {
       font-family: $font-index;
       font-size: 19.2px;
       font-weight: 900;
-      margin: 0px 22.9px 0px 22.1px;
       color: $color-h1-index;
+      @include tablet() {
+        font-size: 24px;
+      }
     }
     &--subtitle {
       font-family: $font-main;
       font-size: 12.8px;
       font-weight: normal;
-      margin: 0px 1.6px 0px 1.6px;
       color: $color-text-index;
+      @include tablet() {
+        margin: 0 218px 0 219px;
+        font-size: 16px;
+      }
     }
   }
   &__articles {
@@ -42,15 +55,27 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr);
     justify-items: center;
+    @include tablet() {
+      width: 325px;
+      height: 86px;
+      margin-bottom: 186px;
+      padding: 15px 20px 10px;
+    }
     &--text {
       font-family: $font-main;
       font-size: 12.8px;
       font-weight: normal;
       color: $color-general-text;
+      @include tablet() {
+        font-size: 16px;
+      }
     }
     &--icon {
       color: $color-accent;
       font-size: 22.4px;
+      @include tablet() {
+        font-size: 28px;
+      }
     }
   }
   &__btn {
@@ -66,6 +91,10 @@
     text-transform: uppercase;
     color: $color-button;
     text-decoration: none;
+    @include tablet() {
+      margin: 0 319px 0 320px;
+      padding: 10px 20.5px 10px 19.5px;
+    }
   }
 }
 .far {
