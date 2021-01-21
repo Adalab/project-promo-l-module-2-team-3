@@ -41,7 +41,7 @@
 .container {
     padding-top: 21px;
     &__main-texts {
-        border-left: solid 5px $color-form-text;
+        border-left: solid 5px $background-button-index;
         &--title {
             text-transform: capitalize;
             font-family: $font-principal;
