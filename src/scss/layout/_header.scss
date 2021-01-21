@@ -1,8 +1,8 @@
 .header {
-  margin: 31px auto 30px 40px;
   background-color: $background-footer-header;
   &__logo {
     width: 200px;
     height: 50px;
+    margin: 31px 0 30px 40px;
   }
 }
