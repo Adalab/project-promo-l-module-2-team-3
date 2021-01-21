@@ -2,3 +2,15 @@
 @import "layout/design";
 @import "layout/fill";
 @import "layout/share";
+.divided {
+    @include tablet() {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        &__paquita {
+            grid-column: 2/3;
+        }
+        &__options {
+            grid-column: 1/2;
+        }
+    }
+}
