@@ -1,0 +1,35 @@
+.fill {
+  width: 100%;
+  padding: 25px 19px 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fill__container {
+  display: flex;
+  flex-direction: column;
+  //justify-content: center;//
+  align-items: flex-start;
+  color: $color-form-text;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  font-family: $font-main;
+}
+
+.form__input {
+  padding-left: 9px;
+  border: solid 1px $color-form-border;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: $color-placeholder;
+  line-height: 20px;
+}
