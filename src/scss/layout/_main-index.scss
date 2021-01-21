@@ -1,111 +1,114 @@
 .main {
-  height: 100%;
-  background-color: $background-main-index;
-  padding: 95px 35px 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 95px 35px 30px 35px;
-  @include normal-text() {
-  }
-  @include tablet() {
-    padding: 350px 0 59px;
-  }
-  &__logo {
-    &--img {
-      width: 250px;
-      height: 63px;
-      object-fit: contain;
+    height: 100%;
+    background-color: $background-main-index;
+    padding: 95px 35px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 95px 35px 30px 35px;
+    @include normal-text() {
+        text-align: center;
     }
-  }
-  &__text {
-    margin: 35.4px 0 17.8px;
     @include tablet() {
-      margin: 31px 0 27px;
+        padding: 350px 0 59px;
     }
-    &--title {
-      font-family: $font-index;
-      font-size: 19.2px;
-      font-weight: 900;
-      text-align: center;
-      color: $color-h1-index;
-      @include tablet() {
-        font-size: 24px;
-      }
+    &__logo {
+        &--img {
+            width: 250px;
+            height: 63px;
+            object-fit: contain;
+        }
     }
-    &--subtitle {
-      font-family: $font-main;
-      font-size: 12.8px;
-      font-weight: normal;
-      text-align: center;
-      color: $color-text-index;
-      @include tablet() {
-        margin: 0 218px 0 219px;
+    &__text {
+        margin: 35.4px 0 17.8px;
+        @include tablet() {
+            margin: 31px 0 27px;
+        }
+        &--title {
+            font-family: $font-index;
+            font-size: 19.2px;
+            font-weight: 900;
+            text-align: center;
+            color: $color-h1-index;
+            @include tablet() {
+                font-size: 24px;
+            }
+        }
+        &--subtitle {
+            font-family: $font-main;
+            font-size: 12.8px;
+            font-weight: normal;
+            text-align: center;
+            color: $color-text-index;
+            @include tablet() {
+                margin: 0 218px 0 219px;
+                font-size: 16px;
+            }
+        }
+    }
+    &__articles {
+        width: 268px;
+        height: 73.8px;
+        margin-bottom: 38.6px;
+        padding: 15px 20px 9.8px 20px;
+        border-radius: 4px;
+        border: solid 1.6px rgba(225, 115, 52, 0.21);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        justify-items: center;
+        @include tablet() {
+            width: 325px;
+            height: 86px;
+            margin-bottom: 186px;
+            padding: 15px 20px 10px;
+        }
+        &--text {
+            font-family: $font-main;
+            font-size: 12.8px;
+            font-weight: normal;
+            text-align: center;
+            color: $color-general-text;
+            @include tablet() {
+                font-size: 16px;
+            }
+        }
+        &--icon {
+            color: $color-accent;
+            font-size: 22.4px;
+            @include tablet() {
+                font-size: 28px;
+            }
+        }
+    }
+    &__btn {
+        width: 129px;
+        height: 42px;
+        margin: 0 75px 0 65px;
+        padding: 10px 20px;
+        border-radius: 21px;
+        background-color: $background-button-index;
+        font-family: $font-main;
         font-size: 16px;
-      }
+        font-weight: 600;
+        text-align: center;
+        text-transform: uppercase;
+        color: $color-button;
+        text-decoration: none;
+        @include tablet() {
+            margin: 0 319px 0 320px;
+            padding: 10px 20.5px 10px 19.5px;
+        }
     }
-  }
-  &__articles {
-    width: 268px;
-    height: 73.8px;
-    margin-bottom: 38.6px;
-    padding: 15px 20px 9.8px 20px;
-    border-radius: 4px;
-    border: solid 1.6px rgba(225, 115, 52, 0.21);
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    justify-items: center;
-    @include tablet() {
-      width: 325px;
-      height: 86px;
-      margin-bottom: 186px;
-      padding: 15px 20px 10px;
-    }
-    &--text {
-      font-family: $font-main;
-      font-size: 12.8px;
-      font-weight: normal;
-      text-align: center;
-      color: $color-general-text;
-      @include tablet() {
-        font-size: 16px;
-      }
-    }
-    &--icon {
-      color: $color-accent;
-      font-size: 22.4px;
-      @include tablet() {
-        font-size: 28px;
-      }
-    }
-  }
-  &__btn {
-    width: 129px;
-    height: 42px;
-    margin: 0 75px 0 65px;
-    padding: 10px 20px;
-    border-radius: 21px;
-    background-color: $background-button-index;
-    font-family: OpenSans;
-    font-size: 16px;
-    font-weight: 600;
-    text-align: center;
-    text-transform: uppercase;
-    color: $color-button;
-    text-decoration: none;
-    @include tablet() {
-      margin: 0 319px 0 320px;
-      padding: 10px 20.5px 10px 19.5px;
-    }
-  }
 }
+
 .far {
-  width: 32px;
-  height: 26px;
+    width: 32px;
+    height: 26px;
 }
+
 .fas {
-  width: 25px;
-  height: 26px;
+    width: 25px;
+    height: 26px;
 }
