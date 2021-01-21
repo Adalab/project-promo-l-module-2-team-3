@@ -1,10 +1,21 @@
 .preview {
     height: 457px;
-    background-color: #bfcdd0;
+    background: $gradient-preview;
     padding-left: 45px;
     display: flex;
     align-items: center;
     flex-direction: column;
+    @media all and (min-width: 768px) {
+        height: 812px;
+        width: 329px;
+        margin: 20px 40px 20px 0;
+        border-radius: 6px;
+        padding-left: 0;
+        order: 2;
+    }
+    @media all and (min-width: 1200px) {
+        width: 585px;
+    }
 }
 
 .reset {
@@ -22,6 +33,9 @@
     border: solid 1px $color-button;
     position: relative;
     transform: translateX(-84px);
+    @media all and (min-width: 768px) {
+        margin-top: 173px;
+    }
 }
 
 .container {
@@ -50,6 +64,9 @@
     width: 240px;
     box-shadow: 0 1px 10px 0 #000000, 0 1px 3px 0 rgba(0, 0, 0, 0.35);
     background-color: $color-button;
+    @media all and (min-width: 768px) {
+        margin-bottom: 260px;
+    }
     &__photo {
         padding-top: 10px;
         height: 200px;
