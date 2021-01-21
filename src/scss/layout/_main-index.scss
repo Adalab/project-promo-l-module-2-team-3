@@ -77,7 +77,6 @@
     &--icon {
       color: $color-accent;
       font-size: 22.4px;
-      text-align: center;
       @include tablet() {
         font-size: 28px;
       }
@@ -103,10 +102,12 @@
     }
   }
 }
+
 .far {
   width: 32px;
   height: 26px;
 }
+
 .fas {
   width: 25px;
   height: 26px;
