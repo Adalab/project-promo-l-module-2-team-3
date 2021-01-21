@@ -4,3 +4,8 @@
 @import "./layout/page";
 @import "./layout/main-index";
 @import "./layout/footer";
+
+.footer {
+  position: absolute;
+  bottom: 0px;
+}
