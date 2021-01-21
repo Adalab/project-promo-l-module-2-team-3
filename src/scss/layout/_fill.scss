@@ -1,9 +1,9 @@
 .fill {
   width: 100%;
   padding: 25px 19px 30px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*align-items: center;*/
 }
 .form__container {
   width: 100%;
@@ -14,6 +14,7 @@
   flex-direction: column;
   //justify-content: center;//
   align-items: flex-start;
+  margin-bottom: 20px;
 }
 
 .form__label {
@@ -29,7 +30,8 @@
 }
 
 .form__input {
-  width: 100%;
+  width: 281px;
+  height: 30px;
   padding-left: 9px;
   border: solid 1px $color-form-border;
   font-size: 14px;
@@ -38,6 +40,24 @@
   font-style: normal;
   line-height: 1.43;
   letter-spacing: normal;
-  color: $color-placeholder;
+  /*color: $color-placeholder;*/
   line-height: 20px;
+}
+
+.image-form__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.button-image {
+  padding-bottom: 3px 22px 7px 22px;
+  background-color: $color-accent;
+}
+
+.small-image__container {
+  width: 30px;
+  height: 30px;
+  background-color: aqua;
+  margin-left: 20px;
 }
