@@ -51,14 +51,15 @@
   &__icons {
     display: flex;
     flex-direction: row;
-    jus &--icon {
-      padding: 0 52px 2px 10px;
+    justify-content: space-between;
+    padding: 10px;
+    &--icon {
+      //padding: 0 52px 2px 10px;//
       height: 32px;
       width: 32px;
       border: solid 2px $color-form-border;
       border-radius: 50%;
       color: $color-form-text;
-      padding: 10px;
       text-decoration: none;
       justify-content: center;
     }
