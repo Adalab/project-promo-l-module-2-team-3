@@ -2,6 +2,9 @@
     height: 457px;
     background-color: #bfcdd0;
     padding-left: 45px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .reset {
@@ -17,16 +20,13 @@
     text-decoration: none;
     background-color: transparent;
     border: solid 1px $color-button;
+    position: relative;
+    transform: translateX(-84px);
 }
 
-.page {
-    border-radius: 2px;
-    height: 329px;
-    width: 240px;
-    box-shadow: 0 1px 10px 0 #000000, 0 1px 3px 0 rgba(0, 0, 0, 0.35);
-    background-color: $color-button;
+.container {
+    padding-top: 21px;
     &__main-texts {
-        padding-top: 21px;
         border-left: solid 5px $color-form-text;
         &--title {
             text-transform: capitalize;
@@ -43,6 +43,13 @@
             padding: 0 0 0 20px;
         }
     }
+}
+
+.page {
+    border-radius: 2px;
+    width: 240px;
+    box-shadow: 0 1px 10px 0 #000000, 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+    background-color: $color-button;
     &__photo {
         padding-top: 10px;
         height: 200px;
@@ -51,14 +58,14 @@
     &__icons {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 62px 12px 20px;
         &--icon {
-            padding: 0 52px 2px 10px;
             height: 32px;
             width: 32px;
             border: solid 2px $color-form-border;
             border-radius: 50%;
             color: $color-form-text;
-            padding: 10px;
             text-decoration: none;
             justify-content: center;
         }
@@ -67,6 +74,10 @@
 
 .link-icon {
     color: $color-form-text;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 6px;
     &:visited {
         color: $color-form-text;
     }

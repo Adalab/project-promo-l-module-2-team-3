@@ -6,10 +6,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 95px 35px 30px 35px;
   @include normal-text() {
   }
   @include tablet() {
-    padding: 0;
+    padding: 350px 0 59px;
   }
   &__logo {
     &--img {
