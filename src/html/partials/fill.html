@@ -1,7 +1,11 @@
-<section>
-  <span></span>
-  <h2>Rellena</h2>
-  <span></span>
+<section class="fill__title">
+  <div class="dropdown">
+    <div class="dropdown__title">
+      <i class="far fa-keyboard dropdown__icon"></i>
+      <h2 class="dropdown__text">Rellena</h2>
+    </div>
+    <i class="fas fa-angle-down dropdown__arrow"></i>
+  </div>
 </section>
 
 <div class="collapsable__content fill">
@@ -17,7 +21,10 @@
     <div class="fill__container ">
       <label class="form__label" for="photo">Imagen de perfil</label>
       <div class="image-form__container">
-        <input class="button-image" type="" value="Añadir imagen" />
+        <div class="button">
+          <button class="button__form"> Añadir imagen</button>
+        </div>
+        <!-- <input class="button-image" type="" value="Añadir imagen" /> -->
         <div class="small-image__container">
         </div>
       </div>
