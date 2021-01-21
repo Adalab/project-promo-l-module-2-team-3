@@ -1,0 +1,97 @@
+.design {
+  @include normal-text() {
+  }
+  @include tablet() {
+  }
+}
+.dropdown {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 27px 20px 0;
+  &__title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  &__text {
+    width: 65px;
+    height: 24px;
+    margin-left: 10px;
+    font-family: $font-main;
+    font-size: 18px;
+    font-weight: 600;
+    color: $color-general-text;
+    text-transform: uppercase;
+  }
+  &__icon {
+    width: 21px;
+    height: 18px;
+    color: $color-accent;
+    font-size: 18px;
+  }
+  &__arrow {
+    width: 16px;
+    height: 18px;
+    font-size: 18px;
+    color: $color-general-text;
+  }
+}
+
+.colorcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 22px 20px 30px 39px;
+  &__title {
+    width: 62px;
+    height: 19px;
+    font-family: $font-main;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: $color-general-text;
+  }
+  &__Label {
+    display: flex;
+  }
+  &__palette {
+    display: flex;
+    margin-left: 10px;
+  }
+  &__square {
+    list-style-type: none;
+    width: 30px;
+    height: 25px;
+    margin-bottom: 20px;
+
+    &--color1-1 {
+      background-color: $option1-element1;
+    }
+    &--color1-2 {
+      background-color: $option1-element2;
+    }
+    &--color1-3 {
+      background-color: $option1-element3;
+    }
+    &--color2-1 {
+      background-color: $option2-element1;
+    }
+    &--color2-2 {
+      background-color: $option2-element2;
+    }
+    &--color2-3 {
+      background-color: $option2-element3;
+    }
+    &--color3-1 {
+      background-color: $option3-element1;
+    }
+    &--color3-2 {
+      background-color: $option3-element2;
+    }
+    &--color3-3 {
+      background-color: $option3-element3;
+    }
+  }
+}
