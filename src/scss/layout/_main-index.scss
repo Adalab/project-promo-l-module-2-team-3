@@ -8,6 +8,7 @@
   align-items: center;
   padding: 95px 35px 30px 35px;
   @include normal-text() {
+    text-align: center;
   }
   @include tablet() {
     padding: 350px 0 59px;
@@ -76,6 +77,7 @@
     &--icon {
       color: $color-accent;
       font-size: 22.4px;
+      text-align: center;
       @include tablet() {
         font-size: 28px;
       }
@@ -88,7 +90,7 @@
     padding: 10px 20px;
     border-radius: 21px;
     background-color: $background-button-index;
-    font-family: OpenSans;
+    font-family: $font-main;
     font-size: 16px;
     font-weight: 600;
     text-align: center;
