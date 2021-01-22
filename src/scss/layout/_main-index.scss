@@ -1,5 +1,5 @@
 .main {
-  height: calc(100vh - 116px);
+  height: calc(100vh - 110px);
   background-color: $background-main-index;
   padding: 95px 35px 30px;
   display: flex;
@@ -10,7 +10,6 @@
     text-align: center;
   }
   @include tablet() {
-    padding: 350px 0 59px;
     height: calc(100vh - 60px);
   }
   &__logo {
@@ -61,7 +60,6 @@
     @include tablet() {
       width: 325px;
       height: 86px;
-      margin-bottom: 186px;
       padding: 15px 20px 10px;
     }
     &--text {
@@ -89,16 +87,19 @@
     padding: 10px 20px;
     border-radius: 21px;
     background-color: $background-button-index;
-    font-family: $font-main;
-    font-size: 16px;
-    font-weight: 600;
-    text-align: center;
-    text-transform: uppercase;
-    color: $color-button;
-    text-decoration: none;
+
     @include tablet() {
-      margin: 0 319px 0 320px;
+      margin: 189px 319px 59px 320px;
       padding: 10px 20.5px 10px 19.5px;
+    }
+    &--link {
+      font-family: $font-main;
+      font-size: 16px;
+      font-weight: 600;
+      text-align: center;
+      text-transform: uppercase;
+      color: $color-button;
+      text-decoration: none;
     }
   }
 }
