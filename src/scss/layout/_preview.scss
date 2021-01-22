@@ -63,10 +63,13 @@
     @media all and (min-width: 768px) {
         margin-bottom: 260px;
     }
-    &__photo {
-        padding-top: 10px;
-        height: 200px;
-        width: 240px;
+    &__container {
+        height: 210px;
+        &--photo {
+            padding-top: 10px;
+            height: 200px;
+            width: 240px;
+        }
     }
     &__icons {
         display: flex;
