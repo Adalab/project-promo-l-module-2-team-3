@@ -1,17 +1,17 @@
 .main {
-  height: 100%;
+  height: calc(100vh - 116px);
   background-color: $background-main-index;
   padding: 95px 35px 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 95px 35px 30px 35px;
   @include normal-text() {
     text-align: center;
   }
   @include tablet() {
     padding: 350px 0 59px;
+    height: calc(100vh - 60px);
   }
   &__logo {
     &--img {

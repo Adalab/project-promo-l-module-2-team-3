@@ -4,41 +4,6 @@
   @include tablet() {
   }
 }
-// .dropdown {
-//   display: flex;
-//   flex-direction: row;
-//   align-items: center;
-//   justify-content: space-between;
-//   padding: 27px 20px 0;
-//   &__title {
-//     display: flex;
-//     flex-direction: row;
-//     align-items: center;
-//   }
-//   &__text {
-//     width: 65px;
-//     height: 24px;
-//     margin-left: 10px;
-//     font-family: $font-main;
-//     font-size: 18px;
-//     font-weight: 600;
-//     color: $color-general-text;
-//     text-transform: uppercase;
-//   }
-//   &__icon {
-//     width: 21px;
-//     height: 18px;
-//     color: $color-accent;
-//     font-size: 18px;
-//   }
-//   &__arrow {
-//     width: 16px;
-//     height: 18px;
-//     font-size: 18px;
-//     color: $color-general-text;
-//   }
-// }
-
 .colorcontainer {
   display: flex;
   flex-direction: row;
