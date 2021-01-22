@@ -1,24 +1,16 @@
 .footer {
   box-sizing: border-box;
   width: 100%;
+  padding: 0px 0 10px 0;
   border: solid 1px $color-lines;
-  @include tablet() {
-  }
 }
 
 .footer__container {
-  height: 110px;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  @include tablet() {
-    height: 60px;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
 }
 
 .copyright {
@@ -31,15 +23,23 @@
   font-style: normal;
   line-height: 1.43;
   letter-spacing: normal;
-  @include tablet() {
-    padding: 18px 0 22px 41px;
-  }
 }
 
 .logo {
   width: 103px;
   height: 40px;
-  @include tablet() {
+}
+
+@media all and (min-width: 768px) {
+  .footer__container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .copyright {
+    padding: 18px 0 22px 41px;
+  }
+  .logo__container {
     padding: 10px 40px 0 0;
   }
 }
