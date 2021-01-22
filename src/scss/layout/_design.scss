@@ -21,6 +21,9 @@
   &__Label {
     display: flex;
   }
+  &__option {
+    transform: translateY(50%);
+  }
   &__palette {
     display: flex;
     margin-left: 10px;
