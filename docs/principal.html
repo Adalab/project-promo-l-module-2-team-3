@@ -15,183 +15,181 @@
 
 <body>
     <section class="header">
-      <div class="container">
-        <div class="header__logo">
-          <a href="./index.html" title="Go to home page">
-            <img
-              src="./assets/images/logo.png"
-              alt="Awesome profile-cards logo"
-              title="Go to home page"
-            />
-          </a>
+        <div class="container">
+            <div class="header__logo">
+                <a href="./index.html" title="Go to home page">
+                    <img src="./assets/images/logo-pc.png" alt="Awesome profile-cards logo" title="Go to home page" />
+                </a>
+            </div>
         </div>
+    </section>
+    <section class="divided">
+      <div class="divided__paquita">
+        <section class="preview">
+            <button class="reset"> <i class="fa fa-trash-alt" aria-hidden="true" alt="trash-can"></i> </i>Reset</button>
+            <section class="page">
+                <div class="container">
+                    <div class="container__main-texts">
+                        <h2 class="container__main-texts--title">nombre apellido</h2>
+                        <h3 class="container__main-texts--subtitle">CEO PS Management</h3>
+                    </div>
+                </div>
+                <div class="Page__container">
+                    <img class="page__container--photo" src="./assets/images/paquita.png" alt="paquita"></img>
+                </div>
+                <section class="page__icons">
+                    <div class="page__icons--icon">
+                        <a href="" class="link-icon" target="_blank">
+                            <i class="fas fa-mobile-alt link" aria-hidden="true" alt="icon-phone"></i>
+                        </a>
+                    </div>
+                    <div class="page__icons--icon">
+                        <a href="" class="link-icon" target="_blank">
+                            <i class="far fa-envelope link" aria-hidden="true" alt="icon-mail"></i>
+                        </a>
+                    </div>
+                    <div class="page__icons--icon">
+                        <a href="" class="link-icon" target="_blank">
+                            <i class="fab fa-linkedin-in link" aria-hidden="true" alt="icon-linkedin"></i>
+                        </a>
+                    </div>
+
+                    <div class="page__icons--icon">
+                        <span class="page__icons--circle"></span>
+                        <a href="" class="link-icon" target="_blank">
+                            <i class="fab fa-github-alt link" aria-hidden="true" alt="icon-github"></i>
+
+
+                        </a>
+                    </div>
+                </section>
+            </section>
+        </section>
+      </div>
+      <div class="centralcolumn divided__options">
+        <section class="design">
+          <div class="dropdown">
+            <div class="dropdown__title">
+              <i class="far fa-object-ungroup dropdown__icon"></i>
+              <h2 class="dropdown__text">Diseña</h2>
+            </div>
+            <i class="fas fa-angle-down dropdown__arrow"></i>
+          </div>
+          <div class="colorcontainer">
+            <h3 class="colorcontainer__title">Colores</h3>
+            <div class="colorcontainer__colors">
+              <label class="colorcontainer__Label">
+                <input class="colorcontainer__option" type="radio" name="palette" />
+                <ul class="colorcontainer__palette">
+                  <li
+                    class="colorcontainer__square colorcontainer__square--color1-1"
+                  ></li>
+                  <li
+                    class="colorcontainer__square colorcontainer__square--color1-2"
+                  ></li>
+                  <li
+                    class="colorcontainer__square colorcontainer__square--color1-3"
+                  ></li>
+                </ul>
+              </label>
+
+              <label class="colorcontainer__Label">
+                <input class="colorcontainer__option" type="radio" name="palette" />
+                <ul class="colorcontainer__palette">
+                  <li
+                    class="colorcontainer__square colorcontainer__square--color2-1"
+                  ></li>
+                  <li
+                    class="colorcontainer__square colorcontainer__square--color2-2"
+                  ></li>
+                  <li
+                    class="colorcontainer__square colorcontainer__square--color2-3"
+                  ></li>
+                </ul>
+              </label>
+
+              <label class="colorcontainer__Label">
+                <input class="colorcontainer__option" type="radio" name="palette" />
+                <ul class="colorcontainer__palette">
+                  <li
+                    class="colorcontainer__square colorcontainer__square--color3-1"
+                  ></li>
+                  <li
+                    class="colorcontainer__square colorcontainer__square--color3-2"
+                  ></li>
+                  <li
+                    class="colorcontainer__square colorcontainer__square--color3-3"
+                  ></li>
+                </ul>
+              </label>
+            </div>
+          </div>
+        </section>
+
+        <section class="fill__title">
+          <div class="dropdown">
+            <div class="dropdown__title">
+              <i class="far fa-keyboard dropdown__icon"></i>
+              <h2 class="dropdown__text">Rellena</h2>
+            </div>
+            <i class="fas fa-angle-down dropdown__arrow"></i>
+          </div>
+        </section>
+
+        <div class="collapsable__content fill">
+          <form class="form__container" action="/signup" method="POST">
+            <div class="fill__container">
+              <label class="form__label" for="name">Nombre completo</label>
+              <input class="form__input" placeholder="Ej: Paquita Salas" id="name" type="text" name="name" />
+            </div>
+            <div class="fill__container">
+              <label class="form__label" for="job">Puesto</label>
+              <input placeholder="Ej: Manager" class="form__input" id="job" type="text" name="job" />
+            </div>
+            <div class="fill__container ">
+              <label class="form__label" for="photo">Imagen de perfil</label>
+              <div class="image-form__container">
+                <div class="button">
+                  <button class="button__form"> Añadir imagen</button>
+                </div>
+                <!-- <input class="button-image" type="" value="Añadir imagen" /> -->
+                <div class="small-image__container">
+                </div>
+              </div>
+            </div>
+            <div class="fill__container">
+              <label class="form__label" for="email">Email</label>
+              <input placeholder="Ej: email" class="form__input" id="email" type="email" name="email" />
+            </div>
+            <div class="fill__container">
+              <label class="form__label" for="phone">Teléfono</label>
+              <input placeholder="Ej: 555-452-369 " class="form__input" id="phone" type="tel" name="phone" />
+            </div>
+            <div class="fill__container">
+              <label class="form__label" for="linkedin">Linkedin</label>
+              <input placeholder="Ej: linkedin.com/in/paquita.salas" class="form__input" id="linkedin" type="url"
+                name="linkedin" />
+            </div>
+            <div class="fill__container">
+              <label class="form__label" for="github">Github</label>
+              <input placeholder="Ej: @paquita-salas" class="form__input" id="github" type="url" name="github" />
+            </div>
+          </form>
+        </div>
+        <section class="share">
+            <div class="dropdown">
+                <div class="dropdown__title">
+                    <i class="fas fa-share-alt dropdown__icon "></i>
+                    <h2 class="dropdown__text">Comparte</h2>
+                </div>
+                <i class="fas fa-angle-down dropdown__arrow"></i>
+            </div>
+            <div class="button">
+                <button class="button__create-card"><i class="far fa-address-card share__create card"></i> Crear tarjeta</button></div>
+        </section>
       </div>
     </section>
 
-    <section class="divided">
-        <div class="divided__paquita">
-            <section class="preview">
-                <button class="reset"> <i class="fa fa-trash-alt" aria-hidden="true" alt="trash-can"></i> </i>Reset</button>
-                <section class="page">
-                    <div class="container">
-                        <div class="container__main-texts">
-                            <h2 class="container__main-texts--title">nombre apellido</h2>
-                            <h3 class="container__main-texts--subtitle">CEO PS Management</h3>
-                        </div>
-                    </div>
-                    <img class="page__photo" src="./assets/images/paquita.png" alt="paquita"></img>
-                    <section class="page__icons">
-                        <div class="page__icons--icon">
-                            <a href="" class="link-icon" target="_blank">
-                                <i class="fas fa-mobile-alt link" aria-hidden="true" alt="icon-phone"></i>
-                            </a>
-                        </div>
-                        <div class="page__icons--icon">
-                            <a href="" class="link-icon" target="_blank">
-                                <i class="far fa-envelope link" aria-hidden="true" alt="icon-mail"></i>
-                            </a>
-                        </div>
-                        <div class="page__icons--icon">
-                            <a href="" class="link-icon" target="_blank">
-                                <i class="fab fa-linkedin-in link" aria-hidden="true" alt="icon-linkedin"></i>
-                            </a>
-                        </div>
-
-                        <div class="page__icons--icon">
-                            <span class="page__icons--circle"></span>
-                            <a href="" class="link-icon" target="_blank">
-                                <i class="fab fa-github-alt link" aria-hidden="true" alt="icon-github"></i>
-
-
-                            </a>
-                        </div>
-                    </section>
-                </section>
-            </section>
-        </div>
-        <div class="divided__options">
-            <section class="design">
-              <div class="dropdown">
-                <div class="dropdown__title">
-                  <i class="far fa-object-ungroup dropdown__icon"></i>
-                  <h2 class="dropdown__text">Diseña</h2>
-                </div>
-                <i class="fas fa-angle-down dropdown__arrow"></i>
-              </div>
-              <div class="colorcontainer">
-                <h3 class="colorcontainer__title">Colores</h3>
-                <div class="colorcontainer__colors">
-                  <label class="colorcontainer__Label">
-                    <input class="colorcontainer__option" type="radio" name="palette" />
-                    <ul class="colorcontainer__palette">
-                      <li
-                        class="colorcontainer__square colorcontainer__square--color1-1"
-                      ></li>
-                      <li
-                        class="colorcontainer__square colorcontainer__square--color1-2"
-                      ></li>
-                      <li
-                        class="colorcontainer__square colorcontainer__square--color1-3"
-                      ></li>
-                    </ul>
-                  </label>
-
-                  <label class="colorcontainer__Label">
-                    <input class="colorcontainer__option" type="radio" name="palette" />
-                    <ul class="colorcontainer__palette">
-                      <li
-                        class="colorcontainer__square colorcontainer__square--color2-1"
-                      ></li>
-                      <li
-                        class="colorcontainer__square colorcontainer__square--color2-2"
-                      ></li>
-                      <li
-                        class="colorcontainer__square colorcontainer__square--color2-3"
-                      ></li>
-                    </ul>
-                  </label>
-
-                  <label class="colorcontainer__Label">
-                    <input class="colorcontainer__option" type="radio" name="palette" />
-                    <ul class="colorcontainer__palette">
-                      <li
-                        class="colorcontainer__square colorcontainer__square--color3-1"
-                      ></li>
-                      <li
-                        class="colorcontainer__square colorcontainer__square--color3-2"
-                      ></li>
-                      <li
-                        class="colorcontainer__square colorcontainer__square--color3-3"
-                      ></li>
-                    </ul>
-                  </label>
-                </div>
-              </div>
-            </section>
-
-            <section class="fill__title">
-              <div class="dropdown">
-                <div class="dropdown__title">
-                  <i class="far fa-keyboard dropdown__icon"></i>
-                  <h2 class="dropdown__text">Rellena</h2>
-                </div>
-                <i class="fas fa-angle-down dropdown__arrow"></i>
-              </div>
-            </section>
-
-            <div class="collapsable__content fill">
-              <form class="form__container" action="/signup" method="POST">
-                <div class="fill__container">
-                  <label class="form__label" for="name">Nombre completo</label>
-                  <input class="form__input" placeholder="Ej: Paquita Salas" id="name" type="text" name="name" />
-                </div>
-                <div class="fill__container">
-                  <label class="form__label" for="job">Puesto</label>
-                  <input placeholder="Ej: Manager" class="form__input" id="job" type="text" name="job" />
-                </div>
-                <div class="fill__container ">
-                  <label class="form__label" for="photo">Imagen de perfil</label>
-                  <div class="image-form__container">
-                    <div class="button">
-                      <button class="button__form"> Añadir imagen</button>
-                    </div>
-                    <!-- <input class="button-image" type="" value="Añadir imagen" /> -->
-                    <div class="small-image__container">
-                    </div>
-                  </div>
-                </div>
-                <div class="fill__container">
-                  <label class="form__label" for="email">Email</label>
-                  <input placeholder="Ej: email" class="form__input" id="email" type="email" name="email" />
-                </div>
-                <div class="fill__container">
-                  <label class="form__label" for="phone">Teléfono</label>
-                  <input placeholder="Ej: 555-452-369 " class="form__input" id="phone" type="tel" name="phone" />
-                </div>
-                <div class="fill__container">
-                  <label class="form__label" for="linkedin">Linkedin</label>
-                  <input placeholder="Ej: linkedin.com/in/paquita.salas" class="form__input" id="linkedin" type="url"
-                    name="linkedin" />
-                </div>
-                <div class="fill__container">
-                  <label class="form__label" for="github">Github</label>
-                  <input placeholder="Ej: @paquita-salas" class="form__input" id="github" type="url" name="github" />
-                </div>
-              </form>
-            </div>
-            <section class="share">
-                <div class="dropdown">
-                    <div class="dropdown__title">
-                        <i class="fas fa-share-alt dropdown__icon "></i>
-                        <h2 class="dropdown__text">Comparte</h2>
-                    </div>
-                    <i class="fas fa-angle-down dropdown__arrow"></i>
-                </div>
-                <div class="button">
-                    <button class="button__create-card"><i class="far fa-address-card share__create card"></i> Crear tarjeta</button></div>
-            </section>
-        </div>
-    </section>
     <footer class="footer">
       <div class="footer__container">
         <small class="copyright"> Awesome profile-card &copy 2021 </small>
