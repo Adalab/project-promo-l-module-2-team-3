@@ -15,14 +15,20 @@
 
 <body>
     <section class="header">
-        <div class="container">
-            <div class="header__logo">
-                <a href="./index.html" title="Go to home page">
-                    <img src="./assets/images/logo-pc.png" alt="Awesome profile-cards logo" title="Go to home page" />
-                </a>
-            </div>
+      <div>
+        <div class="header__logo">
+          <a href="./index.html" title="Go to home page">
+            <img
+              class="header__logo--img"
+              src="./assets/images/logo-pc.png"
+              alt="Awesome profile-cards logo"
+              title="Go to home page"
+            />
+          </a>
         </div>
+      </div>
     </section>
+
     <section class="divided">
       <div class="divided__paquita">
         <section class="preview">
@@ -70,11 +76,21 @@
         <section class="design">
           <div class="dropdown">
             <div class="dropdown__title">
+              <span class="dropdown__icon dropdown__icon--left far fa-object-ungroup"></span>
+              <h2 class="dropdown__text">Diseña</h2>
+            </div>
+            <span
+              class="dropdown__arrow collapsable__icon--right fas fa-angle-down"
+            ></span>
+          </div>
+
+          <!-- <div class="dropdown">
+            <div class="dropdown__title">
               <i class="far fa-object-ungroup dropdown__icon"></i>
               <h2 class="dropdown__text">Diseña</h2>
             </div>
             <i class="fas fa-angle-down dropdown__arrow"></i>
-          </div>
+          </div> -->
           <div class="colorcontainer">
             <h3 class="colorcontainer__title">Colores</h3>
             <div class="colorcontainer__colors">
@@ -129,64 +145,123 @@
         <section class="fill__title">
           <div class="dropdown">
             <div class="dropdown__title">
+              <span class="dropdown__icon dropdown__icon--left far fa-keyboard dropdown__icon"></span>
+              <h2 class="dropdown__text">Rellena</h2>
+            </div>
+            <span
+              class="dropdown__arrow collapsable__icon--right fas fa-angle-down"
+            ></span>
+          </div>
+
+          <!-- <div class="dropdown">
+            <div class="dropdown__title">
               <i class="far fa-keyboard dropdown__icon"></i>
               <h2 class="dropdown__text">Rellena</h2>
             </div>
             <i class="fas fa-angle-down dropdown__arrow"></i>
           </div>
-        </section>
-
-        <div class="collapsable__content fill">
-          <form class="form__container" action="/signup" method="POST">
-            <div class="fill__container">
-              <label class="form__label" for="name">Nombre completo</label>
-              <input class="form__input" placeholder="Ej: Paquita Salas" id="name" type="text" name="name" />
-            </div>
-            <div class="fill__container">
-              <label class="form__label" for="job">Puesto</label>
-              <input placeholder="Ej: Manager" class="form__input" id="job" type="text" name="job" />
-            </div>
-            <div class="fill__container ">
-              <label class="form__label" for="photo">Imagen de perfil</label>
-              <div class="image-form__container">
-                <div class="button">
-                  <button class="button__form"> Añadir imagen</button>
-                </div>
-                <!-- <input class="button-image" type="" value="Añadir imagen" /> -->
-                <div class="small-image__container">
+        </section> -->
+          <div class="collapsable__content fill">
+            <form class="form__container" action="/signup" method="POST">
+              <div class="fill__container">
+                <label class="form__label" for="name">Nombre completo</label>
+                <input
+                  class="form__input"
+                  placeholder="Ej: Paquita Salas"
+                  id="name"
+                  type="text"
+                  name="name"
+                />
+              </div>
+              <div class="fill__container">
+                <label class="form__label" for="job">Puesto</label>
+                <input
+                  placeholder="Ej: Manager"
+                  class="form__input"
+                  id="job"
+                  type="text"
+                  name="job"
+                />
+              </div>
+              <div class="fill__container">
+                <label class="form__label" for="photo">Imagen de perfil</label>
+                <div class="image-form__container">
+                  <div class="button">
+                    <button class="button__form">Añadir imagen</button>
+                  </div>
+                  <!-- <input class="button-image" type="" value="Añadir imagen" /> -->
+                  <div class="small-image__container"></div>
                 </div>
               </div>
-            </div>
-            <div class="fill__container">
-              <label class="form__label" for="email">Email</label>
-              <input placeholder="Ej: email" class="form__input" id="email" type="email" name="email" />
-            </div>
-            <div class="fill__container">
-              <label class="form__label" for="phone">Teléfono</label>
-              <input placeholder="Ej: 555-452-369 " class="form__input" id="phone" type="tel" name="phone" />
-            </div>
-            <div class="fill__container">
-              <label class="form__label" for="linkedin">Linkedin</label>
-              <input placeholder="Ej: linkedin.com/in/paquita.salas" class="form__input" id="linkedin" type="url"
-                name="linkedin" />
-            </div>
-            <div class="fill__container">
-              <label class="form__label" for="github">Github</label>
-              <input placeholder="Ej: @paquita-salas" class="form__input" id="github" type="url" name="github" />
-            </div>
-          </form>
-        </div>
+              <div class="fill__container">
+                <label class="form__label" for="email">Email</label>
+                <input
+                  placeholder="Ej: email"
+                  class="form__input"
+                  id="email"
+                  type="email"
+                  name="email"
+                />
+              </div>
+              <div class="fill__container">
+                <label class="form__label" for="phone">Teléfono</label>
+                <input
+                  placeholder="Ej: 555-452-369 "
+                  class="form__input"
+                  id="phone"
+                  type="tel"
+                  name="phone"
+                />
+              </div>
+              <div class="fill__container">
+                <label class="form__label" for="linkedin">Linkedin</label>
+                <input
+                  placeholder="Ej: linkedin.com/in/paquita.salas"
+                  class="form__input"
+                  id="linkedin"
+                  type="url"
+                  name="linkedin"
+                />
+              </div>
+              <div class="fill__container">
+                <label class="form__label" for="github">Github</label>
+                <input
+                  placeholder="Ej: @paquita-salas"
+                  class="form__input"
+                  id="github"
+                  type="url"
+                  name="github"
+                />
+              </div>
+            </form>
+          </div>
+        </section>
+
         <section class="share">
-            <div class="dropdown">
+          <div class="dropdown">
+            <div class="dropdown__title">
+              <span class="dropdown__icon dropdown__icon--left fas fa-share-alt"></span>
+              <h2 class="dropdown__text">Comparte</h2>
+            </div>
+            <span
+              class="dropdown__arrow collapsable__icon--right fas fa-angle-down"
+            ></span>
+          </div>
+
+          <!-- <div class="dropdown">
                 <div class="dropdown__title">
                     <i class="fas fa-share-alt dropdown__icon "></i>
                     <h2 class="dropdown__text">Comparte</h2>
                 </div>
                 <i class="fas fa-angle-down dropdown__arrow"></i>
-            </div>
-            <div class="button">
-                <button class="button__create-card"><i class="far fa-address-card share__create card"></i> Crear tarjeta</button></div>
+            </div> -->
+          <div class="button">
+            <button class="button__create-card">
+              <i class="far fa-address-card share__create card"></i> Crear tarjeta
+            </button>
+          </div>
         </section>
+
       </div>
     </section>
 
