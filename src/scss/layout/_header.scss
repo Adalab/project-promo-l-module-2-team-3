@@ -1,8 +1,8 @@
 .header {
   background-color: $background-footer-header;
-  &__logo {
+  margin: 31px 0 30px 40px;
+  &--img {
     width: 200px;
     height: 50px;
-    margin: 31px 0 30px 40px;
   }
 }
