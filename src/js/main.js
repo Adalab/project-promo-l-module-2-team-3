@@ -20,8 +20,8 @@ const mail = document.querySelector('.jsmail');
 const previewMail = document.querySelector('.jsmaillink');
 
 function handleMail() {
-    let mailValue = mail.value;
-    let data = { mail: "" };
+    let mailValue = mail.mail;
+    let data = { mailValue };
     previewMail.href = "mailto:" + data.mail;
 }
 
