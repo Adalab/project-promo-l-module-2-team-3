@@ -25,7 +25,9 @@
     }
   }
 }
-
+.js-container {
+  display: none;
+}
 .dropdown {
   display: flex;
   flex-direction: row;
@@ -63,4 +65,8 @@
     font-size: 18px;
     color: $color-general-text;
   }
+}
+
+.js-arrow {
+  color: blue;
 }
