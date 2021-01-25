@@ -1,5 +1,5 @@
 'use strict';
-
+//Name
 const fullName = document.querySelector('.jsname');
 const previewName = document.querySelector('.jsnamepreview');
 
@@ -13,5 +13,16 @@ function handleName() {
     }
 }
 
-
 fullName.addEventListener('keyup', handleName);
+
+//Mail
+const mail = document.querySelector('.jsmail');
+const previewMail = document.querySelector('.jsmaillink');
+
+function handleMail() {
+    let mailValue = mail.value;
+    let data = { mail: "" };
+    previewMail.href = "mailto:" + data.mail;
+}
+
+mail.addEventListener('keyup', handleMail);
