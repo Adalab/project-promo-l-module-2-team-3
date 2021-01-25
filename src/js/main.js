@@ -41,7 +41,9 @@ const previewMail = document.querySelector('.jsmaillink');
 function handleMail() {
     let mailValue = mail.value;
     if (mailValue === ""){
-        previewMail.innerHTML = previewMail;
+        previewMail.innerHTML = `<a href="" class="link-icon ">
+        <i class="far fa-envelope link" aria-hidden="true" alt="icon-mail"></i>
+    </a>`;
     }
     else {
         previewMail.innerHTML = `<a href="mailto:${mailValue}" class="link-icon " target="_blank">
