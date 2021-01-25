@@ -20,9 +20,20 @@ const mail = document.querySelector('.jsmail');
 const previewMail = document.querySelector('.jsmaillink');
 
 function handleMail() {
+    let mailValue = mail.value;
+
+    if (nameValue === "") {
+        let data = { mail: ""};
+        previewMail.href = data;
+    } else {
+        previewMail.href = "mailto:"+mailValue.mail;
+    }
+}
+/*
+function handleMail() {
     let mailValue = mail.mail;
     let data = { mailValue };
     previewMail.href = "mailto:" + data.mail;
-}
+}*/
 
 mail.addEventListener('keyup', handleMail);
