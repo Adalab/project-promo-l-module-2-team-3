@@ -25,8 +25,11 @@
     }
   }
 }
-.js-container {
+.hidden {
   display: none;
+}
+.changeArrow {
+  transform: rotate(180deg);
 }
 .dropdown {
   display: flex;
@@ -65,8 +68,4 @@
     font-size: 18px;
     color: $color-general-text;
   }
-}
-
-.js-arrow {
-  color: blue;
 }

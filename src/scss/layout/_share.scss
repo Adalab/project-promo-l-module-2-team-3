@@ -1,9 +1,10 @@
 .share {
+  margin-bottom: 30px;
   @include normal-text() {
   }
 }
 
-.button {
+.share-button {
   display: flex;
   justify-content: center;
   &__create-card {

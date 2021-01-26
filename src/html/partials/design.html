@@ -1,17 +1,12 @@
 <section class="design">
-  <include
-    src="./dropdown.html"
-    title="Diseña"
-    icon="far fa-object-ungroup"
-  ></include>
-  <!-- <div class="dropdown">
-    <div class="dropdown__title">
-      <i class="far fa-object-ungroup dropdown__icon"></i>
-      <h2 class="dropdown__text">Diseña</h2>
-    </div>
-    <i class="fas fa-angle-down dropdown__arrow"></i>
-  </div> -->
-  <div class="colorcontainer js-container">
+  <button type="button" name="button" class="design-btn dropdown-btn">
+    <include
+      src="./dropdown.html"
+      title="Diseña"
+      icon="far fa-object-ungroup"
+    ></include>
+  </button>
+  <div class="colorcontainer hidden dropdowncontainer">
     <h3 class="colorcontainer__title">Colores</h3>
     <div class="colorcontainer__colors">
       <label class="colorcontainer__Label">

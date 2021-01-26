@@ -4,6 +4,12 @@
   @include tablet() {
   }
 }
+.design-btn {
+  border: none;
+  background-color: white;
+  width: 100%;
+  outline: none;
+}
 .colorcontainer {
   display: flex;
   flex-direction: row;

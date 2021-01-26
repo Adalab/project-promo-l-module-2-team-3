@@ -40,15 +40,23 @@ const previewMail = document.querySelector('.jsmaillink');
 
 function handleMail() {
     let mailValue = mail.value;
-    if (mailValue === ""){
-        previewMail.innerHTML = `<a href="" class="link-icon ">
-        <i class="far fa-envelope link" aria-hidden="true" alt="icon-mail"></i>
-    </a>`;
+    if (mailValue === ''){
+    previewMail.href = '#';
     }
     else {
-        previewMail.innerHTML = `<a href="mailto:${mailValue}" class="link-icon " target="_blank">
-        <i class="far fa-envelope link" aria-hidden="true" alt="icon-mail"></i>
-    </a>`;
+
+    previewMail.href = `mailto:${mailValue}`;
     }
 }
 mail.addEventListener('keyup', handleMail);
+
+//Para que no haga scroll al pulsar el icono cuando no hay mail puesto
+
+function preventLink (ev) {
+    console.log(ev);
+    if (mail.value === '') {
+        ev.preventDefault()
+    }
+}
+previewMail.addEventListener('click', preventLink)
+
