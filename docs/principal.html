@@ -1,19 +1,26 @@
 <!-- Página de diseño -->
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PS Management</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/principal.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <section class="header">
       <div>
         <div class="header__logo">
@@ -36,8 +43,8 @@
             <section class="page">
                 <div class="container">
                     <div class="container__main-texts">
-                        <h2 class="container__main-texts--title">nombre apellido</h2>
-                        <h3 class="container__main-texts--subtitle">CEO PS Management</h3>
+                        <h2 class="container__main-texts--title jsnamepreview">Paquita Salas</h2>
+                        <h3 class="container__main-texts--subtitle jsjobpreview">CEO PS Management</h3>
                     </div>
                 </div>
                 <div class="Page__container">
@@ -50,7 +57,7 @@
                         </a>
                     </div>
                     <div class="page__icons--icon">
-                        <a href="" class="link-icon" target="_blank">
+                        <a href="" class="link-icon jsmaillink">
                             <i class="far fa-envelope link" aria-hidden="true" alt="icon-mail"></i>
                         </a>
                     </div>
@@ -74,24 +81,18 @@
       </div>
       <div class="centralcolumn divided__options">
         <section class="design">
-          <div class="dropdown">
-            <div class="dropdown__title">
-              <span class="dropdown__icon dropdown__icon--left far fa-object-ungroup"></span>
-              <h2 class="dropdown__text">Diseña</h2>
+          <button type="button" name="button" class="design-btn dropdown-btn">
+            <div class="dropdown">
+              <div class="dropdown__title">
+                <span class="dropdown__icon dropdown__icon--left far fa-object-ungroup"></span>
+                <h2 class="dropdown__text">Diseña</h2>
+              </div class="sidebar">
+            <i class="fa fa-chevron-down js-arrow dropdown__arrow"></i>
             </div>
-            <span
-              class="dropdown__arrow collapsable__icon--right fas fa-angle-down"
-            ></span>
-          </div>
 
-          <!-- <div class="dropdown">
-            <div class="dropdown__title">
-              <i class="far fa-object-ungroup dropdown__icon"></i>
-              <h2 class="dropdown__text">Diseña</h2>
-            </div>
-            <i class="fas fa-angle-down dropdown__arrow"></i>
-          </div> -->
-          <div class="colorcontainer">
+
+          </button>
+          <div class="colorcontainer hidden dropdowncontainer">
             <h3 class="colorcontainer__title">Colores</h3>
             <div class="colorcontainer__colors">
               <label class="colorcontainer__Label">
@@ -147,26 +148,17 @@
             <div class="dropdown__title">
               <span class="dropdown__icon dropdown__icon--left far fa-keyboard dropdown__icon"></span>
               <h2 class="dropdown__text">Rellena</h2>
-            </div>
-            <span
-              class="dropdown__arrow collapsable__icon--right fas fa-angle-down"
-            ></span>
+            </div class="sidebar">
+          <i class="fa fa-chevron-down js-arrow dropdown__arrow"></i>
           </div>
 
-          <!-- <div class="dropdown">
-            <div class="dropdown__title">
-              <i class="far fa-keyboard dropdown__icon"></i>
-              <h2 class="dropdown__text">Rellena</h2>
-            </div>
-            <i class="fas fa-angle-down dropdown__arrow"></i>
-          </div>
-        </section> -->
-          <div class="collapsable__content fill">
+
+          <div class="collapsable__content fill hidden">
             <form class="form__container" action="/signup" method="POST">
               <div class="fill__container">
                 <label class="form__label" for="name">Nombre completo</label>
                 <input
-                  class="form__input"
+                  class="form__input jsname"
                   placeholder="Ej: Paquita Salas"
                   id="name"
                   type="text"
@@ -177,7 +169,7 @@
                 <label class="form__label" for="job">Puesto</label>
                 <input
                   placeholder="Ej: Manager"
-                  class="form__input"
+                  class="form__input jsjob"
                   id="job"
                   type="text"
                   name="job"
@@ -197,7 +189,7 @@
                 <label class="form__label" for="email">Email</label>
                 <input
                   placeholder="Ej: email"
-                  class="form__input"
+                  class="form__input jsmail"
                   id="email"
                   type="email"
                   name="email"
@@ -242,21 +234,13 @@
             <div class="dropdown__title">
               <span class="dropdown__icon dropdown__icon--left fas fa-share-alt"></span>
               <h2 class="dropdown__text">Comparte</h2>
-            </div>
-            <span
-              class="dropdown__arrow collapsable__icon--right fas fa-angle-down"
-            ></span>
+            </div class="sidebar">
+          <i class="fa fa-chevron-down js-arrow dropdown__arrow"></i>
           </div>
 
-          <!-- <div class="dropdown">
-                <div class="dropdown__title">
-                    <i class="fas fa-share-alt dropdown__icon "></i>
-                    <h2 class="dropdown__text">Comparte</h2>
-                </div>
-                <i class="fas fa-angle-down dropdown__arrow"></i>
-            </div> -->
-          <div class="button">
-            <button class="button__create-card">
+
+          <div class="share-button hidden">
+            <button class="share-button__create-card">
               <i class="far fa-address-card share__create card"></i> Crear tarjeta
             </button>
           </div>
@@ -273,6 +257,7 @@
         </a>
       </div>
     </footer>
-</body>
 
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+  </body>
 </html>
