@@ -1,30 +1,16 @@
-<section class="fill__title">
-  <include
-    src="./dropdown.html"
-    title="Rellena"
-    icon="far fa-keyboard dropdown__icon"
-  ></include>
-  <div class="collapsable__content fill hidden">
+<section class="fill">
+  <button type="button" name="button" class="fill-btn dropdownfill-btn">
+    <include src="./dropdown.html" title="Rellena" icon="far fa-keyboard dropdown__icon "></include>
+  </button>
+  <div class="collapsable__content hidden dropdownfillcontainer">
     <form class="form__container" action="/signup" method="POST">
       <div class="fill__container">
         <label class="form__label" for="name">Nombre completo</label>
-        <input
-          class="form__input jsname"
-          placeholder="Ej: Paquita Salas"
-          id="name"
-          type="text"
-          name="name"
-        />
+        <input class="form__input jsname" placeholder="Ej: Paquita Salas" id="name" type="text" name="name" />
       </div>
       <div class="fill__container">
         <label class="form__label" for="job">Puesto</label>
-        <input
-          placeholder="Ej: Manager"
-          class="form__input jsjob"
-          id="job"
-          type="text"
-          name="job"
-        />
+        <input placeholder="Ej: Manager" class="form__input jsjob" id="job" type="text" name="job" />
       </div>
       <div class="fill__container">
         <label class="form__label" for="photo">Imagen de perfil</label>
@@ -38,43 +24,20 @@
       </div>
       <div class="fill__container">
         <label class="form__label" for="email">Email</label>
-        <input
-          placeholder="Ej: email"
-          class="form__input jsmail"
-          id="email"
-          type="email"
-          name="email"
-        />
+        <input placeholder="Ej: email" class="form__input jsmail" id="email" type="email" name="email" />
       </div>
       <div class="fill__container">
         <label class="form__label" for="phone">Teléfono</label>
-        <input
-          placeholder="Ej: 555-452-369 "
-          class="form__input"
-          id="phone"
-          type="tel"
-          name="phone"
-        />
+        <input placeholder="Ej: 555-452-369 " class="form__input jsphone" id="phone" type="tel" name="phone" />
       </div>
       <div class="fill__container">
         <label class="form__label" for="linkedin">Linkedin</label>
-        <input
-          placeholder="Ej: linkedin.com/in/paquita.salas"
-          class="form__input"
-          id="linkedin"
-          type="url"
-          name="linkedin"
-        />
+        <input placeholder="Ej: linkedin.com/in/paquita.salas" class="form__input" id="linkedin" type="url"
+          name="linkedin" />
       </div>
       <div class="fill__container">
         <label class="form__label" for="github">Github</label>
-        <input
-          placeholder="Ej: @paquita-salas"
-          class="form__input"
-          id="github"
-          type="url"
-          name="github"
-        />
+        <input placeholder="Ej: @paquita-salas" class="form__input" id="github" type="url" name="github" />
       </div>
     </form>
   </div>

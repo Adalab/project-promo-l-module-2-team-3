@@ -1,12 +1,18 @@
-.fill__title {
+.fill {
   @include normal-text() {
   }
 }
 
-.fill {
+.dropdownfillcontainer {
   box-sizing: border-box;
   width: 100%;
   padding: 25px 0 30px;
+}
+.fill-btn {
+  border: none;
+  background-color: white;
+  width: 100%;
+  outline: none;
 }
 .form__container {
   width: 100%;

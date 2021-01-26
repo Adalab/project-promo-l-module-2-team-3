@@ -60,3 +60,18 @@ function preventLink (ev) {
 }
 previewMail.addEventListener('click', preventLink)
 
+//Phone
+const telephone = document.querySelector('.jsphone');
+const previewTelephone = document.querySelector('.jsphonelink');
+
+function handlePhone() {
+    let telephoneValue = telephone.value;
+    
+    if (telephoneValue === ""){
+        previewTelephone.href = '#';
+    }
+    else {
+        previewTelephone.href = `tel:${telephoneValue}`;
+    }
+}
+telephone.addEventListener('keyup', handlePhone);
