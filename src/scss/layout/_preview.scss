@@ -1,100 +1,102 @@
 .preview {
-    height: 457px;
-    background: $gradient-preview;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    @media all and (min-width: 768px) {
-        height: 812px;
-        margin: 20px 40px 20px 0;
-        border-radius: 6px;
-        padding-left: 0;
-        order: 2;
-    }
-    @media all and (min-width: 1200px) {}
+  height: 457px;
+  background: $gradient-preview;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  @media all and (min-width: 768px) {
+    // height: 812px;
+    height: 100%;
+    margin: 20px 40px 20px 0;
+    border-radius: 6px;
+    padding-left: 0;
+    order: 2;
+  }
+  @media all and (min-width: 1200px) {
+  }
 }
 
 .reset {
-    margin-top: 38px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    height: 30px;
-    width: 75px;
-    color: $color-general-text;
-    font-family: $font-main;
-    font-size: 12px;
-    border-radius: 25px;
-    text-decoration: none;
-    background-color: transparent;
-    border: solid 1px $color-button;
-    position: relative;
-    transform: translateX(-84px);
-    @media all and (min-width: 768px) {
-        margin-top: 173px;
-    }
+  margin-top: 38px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  height: 30px;
+  width: 75px;
+  color: $color-general-text;
+  font-family: $font-main;
+  font-size: 12px;
+  border-radius: 25px;
+  text-decoration: none;
+  background-color: transparent;
+  border: solid 1px $color-button;
+  position: relative;
+  transform: translateX(-84px);
+  @media all and (min-width: 768px) {
+    margin-top: 173px;
+  }
 }
 
 .container {
-    padding-top: 21px;
-    &__main-texts {
-        border-left: solid 5px $background-button-index;
-        &--title {
-            text-transform: capitalize;
-            font-family: $font-principal;
-            font-weight: 600;
-            font-size: 18px;
-            color: $color-form-text;
-            padding: 0 0 0 20px;
-        }
-        &--subtitle {
-            font-family: $font-principal;
-            font-size: 16px;
-            color: $color-general-text;
-            padding: 0 0 0 20px;
-        }
+  padding-top: 21px;
+  &__main-texts {
+    border-left: solid 5px $background-button-index;
+    &--title {
+      text-transform: capitalize;
+      font-family: $font-principal;
+      font-weight: 600;
+      font-size: 18px;
+      color: $color-form-text;
+      padding: 0 0 0 20px;
     }
+    &--subtitle {
+      font-family: $font-principal;
+      font-size: 16px;
+      color: $color-general-text;
+      padding: 0 0 0 20px;
+    }
+  }
 }
 
 .page {
-    border-radius: 2px;
-    width: 240px;
-    box-shadow: 0 1px 10px 0 #000000, 0 1px 3px 0 rgba(0, 0, 0, 0.35);
-    background-color: $color-button;
-    @media all and (min-width: 768px) {
-        margin-bottom: 260px;
+  border-radius: 2px;
+  width: 240px;
+  box-shadow: 0 1px 10px 0 #000000, 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+  background-color: $color-button;
+  @media all and (min-width: 768px) {
+    margin-bottom: 260px;
+  }
+  &__container {
+    height: 210px;
+    &--photo {
+      padding-top: 10px;
+      height: 200px;
+      width: 240px;
     }
-    &__container {
-        height: 210px;
-        &--photo {
-            padding-top: 10px;
-            height: 200px;
-            width: 240px;
-        }
+  }
+  &__icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 62px 12px 20px;
+    &--icon {
+      height: 32px;
+      width: 32px;
+      border: solid 2px $color-form-border;
+      border-radius: 50%;
+      color: $color-form-text;
+      text-decoration: none;
+      justify-content: center;
     }
-    &__icons {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 10px 62px 12px 20px;
-        &--icon {
-            height: 32px;
-            width: 32px;
-            border: solid 2px $color-form-border;
-            border-radius: 50%;
-            color: $color-form-text;
-            text-decoration: none;
-            justify-content: center;
-        }
-    }
+  }
 }
 
 .link-icon {
+  color: $color-form-text;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  padding-top: 6px;
+  &:visited {
     color: $color-form-text;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    padding-top: 6px;
-    &:visited {
-        color: $color-form-text;
-    }
+  }
 }
