@@ -1,33 +1,27 @@
 <!-- Página de diseño -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PS Management</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/principal.css" />
-  </head>
+    <link rel="icon" href="./assets/images/favicon.png">
+</head>
 
-  <body>
+<body>
     <section class="header">
       <div>
         <div class="header__logo">
           <a href="./index.html" title="Go to home page">
             <img
               class="header__logo--img"
-              src="./assets/images/logo-pc.png"
+              src="./assets/images/logo.png"
               alt="Awesome profile-cards logo"
               title="Go to home page"
             />
@@ -52,7 +46,7 @@
                 </div>
                 <section class="page__icons">
                     <div class="page__icons--icon">
-                        <a href="" class="link-icon" target="_blank">
+                        <a href="" class="link-icon jsphonelink" target="_blank">
                             <i class="fas fa-mobile-alt link" aria-hidden="true" alt="icon-phone"></i>
                         </a>
                     </div>
@@ -87,10 +81,8 @@
                 <span class="dropdown__icon dropdown__icon--left far fa-object-ungroup"></span>
                 <h2 class="dropdown__text">Diseña</h2>
               </div class="sidebar">
-            <i class="fa fa-chevron-down js-arrow dropdown__arrow"></i>
+              <i class="fa fa-chevron-down js-arrow dropdown__arrow"></i>
             </div>
-
-
           </button>
           <div class="colorcontainer hidden dropdowncontainer">
             <h3 class="colorcontainer__title">Colores</h3>
@@ -143,17 +135,17 @@
           </div>
         </section>
 
-        <section class="fill__title">
-          <div class="dropdown">
-            <div class="dropdown__title">
-              <span class="dropdown__icon dropdown__icon--left far fa-keyboard dropdown__icon"></span>
-              <h2 class="dropdown__text">Rellena</h2>
-            </div class="sidebar">
-          <i class="fa fa-chevron-down js-arrow dropdown__arrow"></i>
-          </div>
-
-
-          <div class="collapsable__content fill hidden">
+        <section class="fill">
+          <button type="button" name="button" class="fill-btn dropdownfill-btn">
+            <div class="dropdown">
+              <div class="dropdown__title">
+                <span class="dropdown__icon dropdown__icon--left far fa-keyboard dropdown__icon "></span>
+                <h2 class="dropdown__text">Rellena</h2>
+              </div class="sidebar">
+              <i class="fa fa-chevron-down js-arrow-fill dropdown__arrow"></i>
+            </div>
+          </button>
+          <div class="collapsable__content hidden dropdownfillcontainer">
             <form class="form__container" action="/signup" method="POST">
               <div class="fill__container">
                 <label class="form__label" for="name">Nombre completo</label>
@@ -199,7 +191,7 @@
                 <label class="form__label" for="phone">Teléfono</label>
                 <input
                   placeholder="Ej: 555-452-369 "
-                  class="form__input"
+                  class="form__input jsphone"
                   id="phone"
                   type="tel"
                   name="phone"
@@ -235,9 +227,8 @@
               <span class="dropdown__icon dropdown__icon--left fas fa-share-alt"></span>
               <h2 class="dropdown__text">Comparte</h2>
             </div class="sidebar">
-          <i class="fa fa-chevron-down js-arrow dropdown__arrow"></i>
+            <i class="fa fa-chevron-down js-arrow-share dropdown__arrow"></i>
           </div>
-
 
           <div class="share-button hidden">
             <button class="share-button__create-card">
@@ -259,5 +250,6 @@
     </footer>
 
     <script type="text/javascript" src="./assets/js/main.js"></script>
-  </body>
+</body>
+
 </html>
