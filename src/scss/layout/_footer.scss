@@ -35,9 +35,8 @@
 }
 
 .logo {
-  width: 103px;
   height: 40px;
   @include tablet() {
-    padding: 10px 40px 0 0;
+    padding-right: 40px;
   }
 }
