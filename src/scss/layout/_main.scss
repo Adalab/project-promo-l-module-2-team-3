@@ -2,7 +2,6 @@
 @import "layout/design";
 @import "layout/fill";
 @import "layout/share";
-
 .centralcolumn {
   margin: 0 19px 0 20px;
   @include tablet() {
@@ -25,15 +24,22 @@
     }
   }
 }
+
 .hidden {
   display: none;
 }
-.changeArrow {
-  transform: rotate(180deg);
+/* .changeArrow {
+        transform: rotate(180deg);
+    }*/
+
+.changeArrowUp {
+  transform: rotate(0deg);
+  transition: transform 0.5s linear;
 }
 
-.changeFillArrow {
+.changeArrowDown {
   transform: rotate(180deg);
+  transition: transform 0.5s linear;
 }
 
 .dropdown {
