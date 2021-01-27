@@ -6,17 +6,17 @@ const dropdownBtn = document.querySelector('.dropdown-btn');
 const dropdownFillBtn = document.querySelector('.dropdownfill-btn');
 const dropdownContainer = document.querySelector ('.dropdowncontainer');
 const dropdownFillContainer = document.querySelector ('.dropdownfillcontainer');
-const dropdownArrow = document.querySelector('.js-arrow');
+const dropdownArrowDesign = document.querySelector('.js-arrow-design');
 
 
 function Dropdown(){
     if (dropdownContainer.classList.contains('hidden')){
         dropdownContainer.classList.remove('hidden')
-        dropdownArrow.classList.add('changeArrow')
+        dropdownArrowDesign.classList.add('changeArrow')
     }
     else{
         dropdownContainer.classList.add('hidden')
-        dropdownArrow.classList.remove('changeArrow')
+        dropdownArrowDesign.classList.remove('changeArrow')
     }
 };
 dropdownBtn.addEventListener('click', Dropdown);
