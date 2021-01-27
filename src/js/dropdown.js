@@ -6,17 +6,18 @@ const dropdownBtn = document.querySelector('.dropdown-btn');
 const dropdownFillBtn = document.querySelector('.dropdownfill-btn');
 const dropdownContainer = document.querySelector ('.dropdowncontainer');
 const dropdownFillContainer = document.querySelector ('.dropdownfillcontainer');
-const dropdownArrow = document.querySelector('.js-arrow');
+const dropdownArrowDesign = document.querySelector('.js-arrow');
+const dropdownArrowFill = document.querySelector('.js-arrow-fill');
 
 
 function Dropdown(){
     if (dropdownContainer.classList.contains('hidden')){
         dropdownContainer.classList.remove('hidden')
-        dropdownArrow.classList.add('changeArrow')
+        dropdownArrowDesign.classList.add('changeArrow')
     }
     else{
         dropdownContainer.classList.add('hidden')
-        dropdownArrow.classList.remove('changeArrow')
+        dropdownArrowDesign.classList.remove('changeArrow')
     }
 };
 dropdownBtn.addEventListener('click', Dropdown);
@@ -24,11 +25,11 @@ dropdownBtn.addEventListener('click', Dropdown);
 function fillDropdown(){
     if (dropdownFillContainer.classList.contains('hidden')){
         dropdownFillContainer.classList.remove('hidden')
-        dropdownArrow.classList.add('changeArrow')
+        dropdownArrowFill.classList.add('changeArrow')
     }
     else{
         dropdownFillContainer.classList.add('hidden')
-        dropdownArrow.classList.remove('changeArrow')
+        dropdownArrowFill.classList.remove('changeArrow')
     }
 };
 dropdownFillBtn.addEventListener('click', fillDropdown);
