@@ -16,6 +16,7 @@ function Dropdown() {
         dropdownArrowDesign.classList.add('changeArrowDown')
     } else {
         dropdownContainer.classList.add('hidden')
+        dropdownArrowDesign.classList.remove('changeArrowDown')
         dropdownArrowDesign.classList.add('changeArrowUp')
     }
 };
@@ -27,7 +28,8 @@ function fillDropdown() {
         dropdownArrowFill.classList.add('changeArrowDown')
     } else {
         dropdownFillContainer.classList.add('hidden')
-        dropdownArrowFill.classList.remove('changeArrowUp')
+        dropdownArrowFill.classList.remove('changeArrowDown')
+        dropdownArrowFill.classList.add('changeArrowUp')
     }
 };
 dropdownFillBtn.addEventListener('click', fillDropdown);
