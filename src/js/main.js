@@ -40,19 +40,18 @@ const previewMail = document.querySelector('.jsmaillink');
 
 function handleMail() {
     let mailValue = mail.value;
-    if (mailValue === ''){
-    previewMail.href = '#';
-    }
-    else {
+    if (mailValue === '') {
+        previewMail.href = '#';
+    } else {
 
-    previewMail.href = `mailto:${mailValue}`;
+        previewMail.href = `mailto:${mailValue}`;
     }
 }
 mail.addEventListener('keyup', handleMail);
 
 //Para que no haga scroll al pulsar el icono cuando no hay mail puesto
 
-function preventLink (ev) {
+function preventLink(ev) {
     console.log(ev);
     if (mail.value === '') {
         ev.preventDefault()
@@ -66,11 +65,10 @@ const previewTelephone = document.querySelector('.jsphonelink');
 
 function handlePhone() {
     let telephoneValue = telephone.value;
-    
-    if (telephoneValue === ""){
+
+    if (telephoneValue === "") {
         previewTelephone.href = '#';
-    }
-    else {
+    } else {
         previewTelephone.href = `tel:${telephoneValue}`;
     }
 }
