@@ -75,20 +75,25 @@ telephone.addEventListener('keyup', handlePhone);
 const linkedin = document.querySelector('.jsin');
 const previewLinkedin = document.querySelector('.jsinlink');
 
+
+
 function handleLinkedin() {
     let linkedinValue = linkedin.value;
 
     if (linkedinValue === "") {
         previewLinkedin.href = '#';
     } else {
-        previewLinkedin.href = `https://www.linkedin.com/in/${linkedin}/`;
+        previewLinkedin.href = `https://www.linkedin.com/in/${linkedinValue}`;
     }
+    linkedin.replace('https://www.linkedin.com/in/', '');
 }
 linkedin.addEventListener('keyup', handleLinkedin);
 
 //Github
-const github = document.querySelector('.jsgihub');
-const previewGithub = document.querySelector('.jsgihublink');
+const github = document.querySelector('.jsgithub');
+const previewGithub = document.querySelector('.jsgithublink');
+
+
 
 function handleGithub() {
     let githubValue = github.value;
@@ -96,7 +101,8 @@ function handleGithub() {
     if (githubValue === "") {
         previewGithub.href = '#';
     } else {
-        previewGithub.href = `https://www.linkedin.com/in/${github}`;
+        previewGithub.href = `https://github.com/${githubValue}`;
     }
+    github.replace('https://github.com/', '');
 }
 github.addEventListener('keyup', handleGithub);
