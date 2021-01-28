@@ -9,8 +9,9 @@
 .divided {
   background: $gradient-main;
   @include tablet() {
+    /*max-width: 1200px*/
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 60% 40%;
     grid-template-row: 1fr;
 
     &__paquita {
@@ -21,6 +22,10 @@
       grid-column: 1 / 2;
       grid-row: span1;
     }
+  }
+  @include desktop() {
+    /*margin: auto;*/
+    grid-template-columns: 40% 60%;
   }
 }
 
