@@ -79,13 +79,14 @@ const previewLinkedin = document.querySelector('.jsinlink');
 
 function handleLinkedin() {
     let linkedinValue = linkedin.value;
+    linkedinValue.replace('https://www.linkedin.com/in/', '');
 
     if (linkedinValue === "") {
         previewLinkedin.href = '#';
     } else {
         previewLinkedin.href = `https://www.linkedin.com/in/${linkedinValue}`;
     }
-    let fixLinkedinLink = linkedinValue.replace("https://github.com/", "");
+
 }
 linkedin.addEventListener('keyup', handleLinkedin);
 
@@ -94,16 +95,16 @@ const github = document.querySelector('.jsgithub');
 const previewGithub = document.querySelector('.jsgithublink');
 
 
-
 function handleGithub() {
     let githubValue = github.value;
+    githubValue.replace('https://github.com/', '');
 
     if (githubValue === "") {
         previewGithub.href = '#';
     } else {
         previewGithub.href = `https://github.com/${githubValue}`;
     }
-    let fixGithubLink = githubValue.replace("https://github.com/", "");
+
 
 }
 github.addEventListener('keyup', handleGithub);
