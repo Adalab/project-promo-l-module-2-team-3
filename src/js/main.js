@@ -84,7 +84,22 @@ function handleLinkedin() {
     if (linkedinValue === "") {
         previewLinkedin.href = '#';
     } else {
-        previewLinkedin.href = `https://www.linkedin.com/in/${linkedin}`;
+        previewLinkedin.href = `https://www.linkedin.com/in/${linkedin}/`;
     }
 }
 linkedin.addEventListener('keyup', handleLinkedin);
+
+//Github
+const github = document.querySelector('.jsgihub');
+const previewGithub = document.querySelector('.jsgihublink');
+
+function handleGithub() {
+    let githubValue = github.value;
+
+    if (githubValue === "") {
+        previewGithub.href = '#';
+    } else {
+        previewGithub.href = `https://www.linkedin.com/in/${github}`;
+    }
+}
+github.addEventListener('keyup', handleGithub);
