@@ -12,6 +12,7 @@
 
 .divided {
   @include tablet() {
+    /*max-width: 1200px*/
     display: grid;
     grid-template-columns: 60% 40%;
     grid-template-row: 1fr;
@@ -25,6 +26,7 @@
     }
   }
   @include desktop() {
+    /*margin: auto;*/
     grid-template-columns: 40% 60%;
   }
 }
