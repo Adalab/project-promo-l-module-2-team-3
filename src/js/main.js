@@ -73,3 +73,18 @@ function handlePhone() {
     }
 }
 telephone.addEventListener('keyup', handlePhone);
+
+//Linkedin
+const linkedin = document.querySelector('.jsin');
+const previewLinkedin = document.querySelector('.jsinlink');
+
+function handleLinkedin() {
+    let linkedinValue = linkedin.value;
+
+    if (linkedinValue === "") {
+        previewLinkedin.href = '#';
+    } else {
+        previewLinkedin.href = `https://www.linkedin.com/in/${linkedin}`;
+    }
+}
+linkedin.addEventListener('keyup', handleLinkedin);
