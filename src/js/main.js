@@ -85,7 +85,7 @@ function handleLinkedin() {
     } else {
         previewLinkedin.href = `https://www.linkedin.com/in/${linkedinValue}`;
     }
-    linkedin.replace('https://www.linkedin.com/in/', '');
+    let fixLinkedinLink = linkedinValue.replace("https://github.com/", "");
 }
 linkedin.addEventListener('keyup', handleLinkedin);
 
@@ -103,6 +103,7 @@ function handleGithub() {
     } else {
         previewGithub.href = `https://github.com/${githubValue}`;
     }
-    github.replace('https://github.com/', '');
+    let fixGithubLink = githubValue.replace("https://github.com/", "");
+
 }
 github.addEventListener('keyup', handleGithub);
