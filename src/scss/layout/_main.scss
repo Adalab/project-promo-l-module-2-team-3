@@ -13,7 +13,7 @@
   background: $gradient-main;
   @include tablet() {
     display: grid;
-    grid-template-columns: 60% 50%;
+    grid-template-columns: 60% 40%;
     grid-template-row: 1fr;
 
     &__paquita {
