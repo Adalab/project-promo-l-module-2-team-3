@@ -4,7 +4,7 @@
 const form = document.querySelector(".jsform");
 
 function handleForm(ev) {
-    ev.preventDefault();
+  ev.preventDefault();
 }
 
 form.addEventListener("submit", handleForm);
@@ -14,17 +14,17 @@ const fullName = document.querySelector(".jsname");
 const previewName = document.querySelector(".jsnamepreview");
 
 function handleName(ev) {
-    let nameValue = fullName.value;
+  let nameValue = fullName.value;
 
-    if (nameValue === "") {
-        previewName.innerHTML = "Paquita Salas";
-    } else {
-        previewName.innerHTML = nameValue;
-    }
-    // check intro key
-    if (ev.keyCode === 13) {
-        jobElement.focus();
-    }
+  if (nameValue === "") {
+    previewName.innerHTML = "Paquita Salas";
+  } else {
+    previewName.innerHTML = nameValue;
+  }
+  // check intro key
+  if (ev.keyCode === 13) {
+    jobElement.focus();
+  }
 }
 
 fullName.addEventListener("keyup", handleName);
@@ -34,17 +34,17 @@ const jobElement = document.querySelector(".jsjob");
 const previewJob = document.querySelector(".jsjobpreview");
 
 function handleJob(ev) {
-    let jobValue = jobElement.value;
+  let jobValue = jobElement.value;
 
-    if (jobValue === "") {
-        previewJob.innerHTML = "CEO PS Management";
-    } else {
-        previewJob.innerHTML = jobValue;
-    }
+  if (jobValue === "") {
+    previewJob.innerHTML = "CEO PS Management";
+  } else {
+    previewJob.innerHTML = jobValue;
+  }
 
-    if (ev.keyCode === 13) {
-        mail.focus();
-    }
+  if (ev.keyCode === 13) {
+    mail.focus();
+  }
 }
 
 jobElement.addEventListener("keyup", handleJob);
@@ -54,24 +54,23 @@ const mail = document.querySelector(".jsmail");
 const previewMail = document.querySelector(".jsmaillink");
 
 function handleMail(ev) {
-    let mailValue = mail.value;
-    if (mailValue === "") {
-        previewMail.href = "#";
-    } else {
-        previewMail.href = `mailto:${mailValue}`;
-    }
-    if (ev.keyCode === 13) {
-        telephone.focus();
-    }
+  let mailValue = mail.value;
+  if (mailValue === "") {
+    previewMail.href = "#";
+  } else {
+    previewMail.href = `mailto:${mailValue}`;
+  }
+  if (ev.keyCode === 13) {
+    telephone.focus();
+  }
 }
 mail.addEventListener("keyup", handleMail);
 
-
 function preventLink(event) {
-    console.log(event);
-    if (mail.value === "") {
-        event.preventDefault();
-    }
+  console.log(event);
+  if (mail.value === "") {
+    event.preventDefault();
+  }
 }
 previewMail.addEventListener("click", preventLink);
 
@@ -80,25 +79,25 @@ const telephone = document.querySelector(".jsphone");
 const previewTelephone = document.querySelector(".jsphonelink");
 
 function handlePhone(ev) {
-    let telephoneValue = telephone.value;
+  let telephoneValue = telephone.value;
 
-    if (telephoneValue === "") {
-        previewTelephone.href = "#";
-    } else {
-        previewTelephone.href = `tel:${telephoneValue}`;
-    }
+  if (telephoneValue === "") {
+    previewTelephone.href = "#";
+  } else {
+    previewTelephone.href = `tel:${telephoneValue}`;
+  }
 
-    if (ev.keyCode === 13) {
-        linkedin.focus();
-    }
+  if (ev.keyCode === 13) {
+    linkedin.focus();
+  }
 }
 telephone.addEventListener("keyup", handlePhone);
 
 function preventTelephone(event) {
-    console.log(event);
-    if (telephone.value === "") {
-        event.preventDefault();
-    }
+  console.log(event);
+  if (telephone.value === "") {
+    event.preventDefault();
+  }
 }
 previewTelephone.addEventListener("click", preventTelephone);
 
@@ -107,26 +106,28 @@ const linkedin = document.querySelector(".jslinkedin");
 const previewLinkedin = document.querySelector(".jslinkedinlink");
 
 function handleLinkedin(ev) {
-    let linkedinValue = linkedin.value;
-    let newLinkedinValue = linkedinValue.replace('https://www.linkedin.com/in/', '');
+  let linkedinValue = linkedin.value;
+  let newLinkedinValue = linkedinValue.replace(
+    "https://www.linkedin.com/in/",
+    ""
+  );
 
-    if (linkedinValue === "") {
-        previewLinkedin.href = "#";
-    } else {
-        previewLinkedin.href = `https://www.linkedin.com/in/${newLinkedinValue}`;
-    }
-    if (ev.keyCode === 13) {
-        github.focus();
-    }
-
+  if (linkedinValue === "") {
+    previewLinkedin.href = "#";
+  } else {
+    previewLinkedin.href = `https://www.linkedin.com/in/${newLinkedinValue}`;
+  }
+  if (ev.keyCode === 13) {
+    github.focus();
+  }
 }
 linkedin.addEventListener("keyup", handleLinkedin);
 
 function preventLinkedin(event) {
-    console.log(event);
-    if (linkedin.value === "") {
-        event.preventDefault();
-    }
+  console.log(event);
+  if (linkedin.value === "") {
+    event.preventDefault();
+  }
 }
 previewLinkedin.addEventListener("click", preventLinkedin);
 
@@ -134,30 +135,29 @@ previewLinkedin.addEventListener("click", preventLinkedin);
 const github = document.querySelector(".jsgithub");
 const previewGithub = document.querySelector(".jsgithublink");
 
-function handleGithub() {
-    let githubValue = github.value;
-    let newGithubValue = githubValue.replace('https://github.com/', '');
+function handleGithub(ev) {
+  let githubValue = github.value;
+  let newGithubValue = githubValue.replace("https://github.com/", "");
 
-
-    if (githubValue === "") {
-        previewGithub.href = "#";
-    } else {
-        previewGithub.href = `https://github.com/${newGithubValue}`;
-    }
-    // check intro key
-    if (ev.keyCode === 13) {
-        const dropdownShareBtn = document.querySelector(".dropdownshare-btn");
-        dropdownShareBtn.click();
-        const shareBtn = document.querySelector(".jssharebtn");
-        shareBtn.focus();
-    }
+  if (githubValue === "") {
+    previewGithub.href = "#";
+  } else {
+    previewGithub.href = `https://github.com/${newGithubValue}`;
+  }
+  // check intro key
+  if (ev.keyCode === 13) {
+    const dropdownShareBtn = document.querySelector(".dropdownshare-btn");
+    dropdownShareBtn.click();
+    const shareBtn = document.querySelector(".jssharebtn");
+    shareBtn.focus();
+  }
 }
 github.addEventListener("keyup", handleGithub);
 
 function preventGithub(event) {
-    console.log(event);
-    if (github.value === "") {
-        event.preventDefault();
-    }
+  console.log(event);
+  if (github.value === "") {
+    event.preventDefault();
+  }
 }
 previewGithub.addEventListener("click", preventGithub);
