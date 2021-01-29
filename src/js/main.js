@@ -69,47 +69,6 @@ function handlePhone() {
         previewTelephone.href = `tel:${telephoneValue}`;
     }
 }
-<<<<<<< HEAD
-telephone.addEventListener('keyup', handlePhone);
-
-//Linkedin
-const linkedin = document.querySelector('.jsin');
-const previewLinkedin = document.querySelector('.jsinlink');
-
-
-
-function handleLinkedin() {
-    let linkedinValue = linkedin.value;
-    linkedinValue.replace('https://www.linkedin.com/in/', '');
-
-    if (linkedinValue === "") {
-        previewLinkedin.href = '#';
-    } else {
-        previewLinkedin.href = `https://www.linkedin.com/in/${linkedinValue}`;
-    }
-
-}
-linkedin.addEventListener('keyup', handleLinkedin);
-
-//Github
-const github = document.querySelector('.jsgithub');
-const previewGithub = document.querySelector('.jsgithublink');
-
-
-function handleGithub() {
-    let githubValue = github.value;
-    githubValue.replace('https://github.com/', '');
-
-    if (githubValue === "") {
-        previewGithub.href = '#';
-    } else {
-        previewGithub.href = `https://github.com/${githubValue}`;
-    }
-
-
-}
-github.addEventListener('keyup', handleGithub);
-=======
 telephone.addEventListener("keyup", handlePhone);
 
 //SHARE
@@ -127,4 +86,3 @@ function handleName() {
   }
 }*/
 
->>>>>>> pointer
