@@ -151,23 +151,7 @@ function handleGithub(ev) {
     const shareBtn = document.querySelector(".jssharebtn");
     shareBtn.focus();
   }
-    let githubValue = github.value;
-    let newGithubValue = githubValue.replace('https://github.com/', '');
-
-
-    if (githubValue === "") {
-        previewGithub.href = "#";
-    } else {
-        previewGithub.href = `https://github.com/${newGithubValue}`;
-    }
-    // check intro key
-    if (ev.keyCode === 13) {
-        const dropdownShareBtn = document.querySelector(".dropdownshare-btn");
-        dropdownShareBtn.click();
-        const shareBtn = document.querySelector(".jssharebtn");
-        shareBtn.focus();
-    }
-}
+} 
 github.addEventListener("keyup", handleGithub);
 
 function preventGithub(event) {
