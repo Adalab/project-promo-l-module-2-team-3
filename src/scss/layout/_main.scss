@@ -3,85 +3,82 @@
 @import "layout/fill";
 @import "layout/share";
 .centralcolumn {
-  margin: 17px 19px 0 20px;
-  @include tablet() {
-    margin: 17px 40px 0 40px;
-  }
+    margin: 17px 19px 0 20px;
+    @include tablet() {
+        margin: 17px 40px 0 40px;
+    }
 }
 
 .divided {
-  background: $gradient-main;
-  @include tablet() {
-    display: grid;
-    grid-template-columns: 60% 50%;
-    grid-template-row: 1fr;
-
-    &__paquita {
-      grid-column: 2 / 3;
-      grid-row: span1;
+    background: $gradient-main;
+    @include tablet() {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-row: 1fr;
+        &__paquita {
+            grid-column: 2 / 3;
+            grid-row: span1;
+        }
+        &__options {
+            grid-column: 1 / 2;
+            grid-row: span1;
+        }
     }
-    &__options {
-      grid-column: 1 / 2;
-      grid-row: span1;
-    }
-  }
 }
 
 .divided__options {
-  @include tablet() {
-  }
+    @include tablet() {}
 }
 
 .hidden {
-  display: none;
+    display: none;
 }
 
 .changeArrowUp {
-  transform: rotate(0deg);
-  transition: transform 0.5s linear;
+    transform: rotate(0deg);
+    transition: transform 0.5s linear;
 }
 
 .changeArrowDown {
-  transform: rotate(180deg);
-  transition: transform 0.5s linear;
+    transform: rotate(180deg);
+    transition: transform 0.5s linear;
 }
 
 .dropdown {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  margin: 10px 0 10px;
-  @include normal-text() {
-  }
-  @include tablet() {
-    margin: 10px 0 7px;
-  }
-  &__title {
     display: flex;
     flex-direction: row;
     align-items: center;
-  }
-  &__text {
-    width: 65px;
-    height: 24px;
-    margin-left: 10px;
-    font-family: $font-main;
-    font-size: 18px;
-    font-weight: 600;
-    color: $color-general-text;
-    text-transform: uppercase;
-  }
-  &__icon {
-    width: 21px;
-    height: 18px;
-    color: $color-accent;
-    font-size: 18px;
-  }
-  &__arrow {
-    width: 16px;
-    height: 18px;
-    font-size: 18px;
-    color: $color-general-text;
-  }
+    justify-content: space-between;
+    margin: 10px 0 10px;
+    @include normal-text() {}
+    @include tablet() {
+        margin: 10px 0 7px;
+    }
+    &__title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    &__text {
+        width: 65px;
+        height: 24px;
+        margin-left: 10px;
+        font-family: $font-main;
+        font-size: 18px;
+        font-weight: 600;
+        color: $color-general-text;
+        text-transform: uppercase;
+    }
+    &__icon {
+        width: 21px;
+        height: 18px;
+        color: $color-accent;
+        font-size: 18px;
+    }
+    &__arrow {
+        width: 16px;
+        height: 18px;
+        font-size: 18px;
+        color: $color-general-text;
+    }
 }
