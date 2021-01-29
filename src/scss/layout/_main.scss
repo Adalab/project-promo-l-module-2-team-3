@@ -24,7 +24,7 @@
       grid-row: span1;
     }
   }
-  @include tablet() {
+  @include desktop() {
     grid-template-columns: 40% 60%;
   }
 }
