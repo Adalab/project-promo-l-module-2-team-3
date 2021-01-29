@@ -23,7 +23,6 @@ function Dropdown() {
     dropdownArrowDesign.classList.add("changeArrowDown");
   } else {
     dropdownContainer.classList.add("hidden");
-    git;
     dropdownArrowDesign.classList.remove("changeArrowDown");
     dropdownArrowDesign.classList.add("changeArrowUp");
   }
