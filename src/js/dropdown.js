@@ -8,6 +8,11 @@ const dropdownContainer = document.querySelector('.dropdowncontainer');
 const dropdownFillContainer = document.querySelector('.dropdownfillcontainer');
 const dropdownArrowDesign = document.querySelector('.js-arrow');
 const dropdownArrowFill = document.querySelector('.js-arrow-fill');
+const dropdownShare = document.querySelector ('.share');
+const dropdownShareBtn = document.querySelector ('.dropdownshare-btn');
+const dropdownShareContainer = document.querySelector('.dropdownsharecontainer');
+const dropdownArrowShare = document.querySelector('.js-arrow-share');
+
 
 
 function Dropdown() {
@@ -33,6 +38,19 @@ function fillDropdown() {
     }
 };
 dropdownFillBtn.addEventListener('click', fillDropdown);
+
+
+function shareDropdown() {
+    if (dropdownShareContainer.classList.contains('hidden')) {
+        dropdownShareContainer.classList.remove('hidden')
+        dropdownArrowShare.classList.add('changeArrowDown')
+    } else {
+        dropdownShareContainer.classList.add('hidden')
+        dropdownArrowShare.classList.remove('changeArrowDown')
+        dropdownArrowShare.classList.add('changeArrowUp')
+    }
+};
+dropdownShareBtn.addEventListener('click', shareDropdown);
 
 /*
 function() {

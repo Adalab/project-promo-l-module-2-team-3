@@ -70,3 +70,19 @@ function handlePhone() {
   }
 }
 telephone.addEventListener("keyup", handlePhone);
+
+//SHARE
+/*
+const fullName = document.querySelector(".jsname");
+const previewName = document.querySelector(".jsnamepreview");
+
+function handleName() {
+  let nameValue = fullName.value;
+
+  if (nameValue === "") {
+    previewName.innerHTML = "Paquita Salas";
+  } else {
+    previewName.innerHTML = nameValue;
+  }
+}*/
+
