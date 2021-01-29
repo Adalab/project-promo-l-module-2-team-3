@@ -98,11 +98,12 @@ const previewLinkedin = document.querySelector(".jslinkedinlink");
 
 function handleLinkedin() {
     let linkedinValue = linkedin.value;
+    let newLinkedinValue = linkedinValue.replace('https://www.linkedin.com/in/', '');
 
     if (linkedinValue === "") {
         previewLinkedin.href = "#";
     } else {
-        previewLinkedin.href = `https://www.linkedin.com/in/${linkedinValue}`;
+        previewLinkedin.href = `https://www.linkedin.com/in/${newLinkedinValue}`;
     }
 
 }
@@ -114,11 +115,13 @@ const previewGithub = document.querySelector(".jsgithublink");
 
 function handleGithub() {
     let githubValue = github.value;
+    let NewGithubValue = githubValue.replace('https://github.com/', '');
+
 
     if (githubValue === "") {
         previewGithub.href = "#";
     } else {
-        previewGithub.href = `https://github.com/${githubValue}`;
+        previewGithub.href = `https://github.com/${NewGithubValue}`;
     }
 }
 github.addEventListener("keyup", handleGithub);
