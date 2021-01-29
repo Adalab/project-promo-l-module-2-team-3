@@ -34,13 +34,17 @@ fullName.addEventListener("keyup", handleName);
 const jobElement = document.querySelector(".jsjob");
 const previewJob = document.querySelector(".jsjobpreview");
 
-function handleJob() {
+function handleJob(ev) {
     let jobValue = jobElement.value;
 
     if (jobValue === "") {
         previewJob.innerHTML = "CEO PS Management";
     } else {
         previewJob.innerHTML = jobValue;
+    }
+
+    if (ev.keyCode === 13) {
+        mail.focus();
     }
 }
 
@@ -50,18 +54,21 @@ jobElement.addEventListener("keyup", handleJob);
 const mail = document.querySelector(".jsmail");
 const previewMail = document.querySelector(".jsmaillink");
 
-function handleMail() {
+function handleMail(ev) {
     let mailValue = mail.value;
     if (mailValue === "") {
         previewMail.href = "#";
     } else {
         previewMail.href = `mailto:${mailValue}`;
     }
+    if (ev.keyCode === 13) {
+        telephone.focus();
+    }
 }
 mail.addEventListener("keyup", handleMail);
 
 //Para que no haga scroll al pulsar el icono cuando no hay mail puesto
-
+//QUE HACE ESTO???
 function preventLink(ev) {
     console.log(ev);
     if (mail.value === "") {
@@ -82,12 +89,9 @@ function handlePhone(ev) {
     } else {
         previewTelephone.href = `tel:${telephoneValue}`;
     }
-    // check intro key
+
     if (ev.keyCode === 13) {
-        const dropdownShareBtn = document.querySelector(".dropdownshare-btn");
-        dropdownShareBtn.click();
-        const shareBtn = document.querySelector(".jssharebtn");
-        shareBtn.focus();
+        linkedin.focus();
     }
 }
 telephone.addEventListener("keyup", handlePhone);
@@ -96,7 +100,7 @@ telephone.addEventListener("keyup", handlePhone);
 const linkedin = document.querySelector(".jslinkedin");
 const previewLinkedin = document.querySelector(".jslinkedinlink");
 
-function handleLinkedin() {
+function handleLinkedin(ev) {
     let linkedinValue = linkedin.value;
     let newLinkedinValue = linkedinValue.replace('https://www.linkedin.com/in/', '');
 
@@ -105,7 +109,9 @@ function handleLinkedin() {
     } else {
         previewLinkedin.href = `https://www.linkedin.com/in/${newLinkedinValue}`;
     }
-
+    if (ev.keyCode === 13) {
+        github.focus();
+    }
 
 }
 linkedin.addEventListener("keyup", handleLinkedin);
@@ -114,7 +120,7 @@ linkedin.addEventListener("keyup", handleLinkedin);
 const github = document.querySelector(".jsgithub");
 const previewGithub = document.querySelector(".jsgithublink");
 
-function handleGithub() {
+function handleGithub(ev) {
     let githubValue = github.value;
     let newGithubValue = githubValue.replace('https://github.com/', '');
 
@@ -124,20 +130,12 @@ function handleGithub() {
     } else {
         previewGithub.href = `https://github.com/${newGithubValue}`;
     }
+    // check intro key
+    if (ev.keyCode === 13) {
+        const dropdownShareBtn = document.querySelector(".dropdownshare-btn");
+        dropdownShareBtn.click();
+        const shareBtn = document.querySelector(".jssharebtn");
+        shareBtn.focus();
+    }
 }
 github.addEventListener("keyup", handleGithub);
-
-//SHARE
-/*
-const fullName = document.querySelector(".jsname");
-const previewName = document.querySelector(".jsnamepreview");
-
-function handleName() {
-  let nameValue = fullName.value;
-
-  if (nameValue === "") {
-    previewName.innerHTML = "Paquita Salas";
-  } else {
-    previewName.innerHTML = nameValue;
-  }
-}*/
