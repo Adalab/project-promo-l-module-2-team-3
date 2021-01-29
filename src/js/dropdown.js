@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-"use strict";
-=======
 'use strict';
 
 const dropdownDesign = document.querySelector('.design');
@@ -16,7 +13,6 @@ const dropdownShareBtn = document.querySelector ('.dropdownshare-btn');
 const dropdownShareContainer = document.querySelector('.dropdownsharecontainer');
 const dropdownArrowShare = document.querySelector('.js-arrow-share');
 
->>>>>>> pointer
 
 const dropdownDesign = document.querySelector(".design");
 const dropdownFill = document.querySelector(".fill");
