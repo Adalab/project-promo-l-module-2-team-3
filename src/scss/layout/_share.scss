@@ -22,6 +22,11 @@
     font-family: $font-main;
     border: 0;
     margin: 30px 0 30px 0;
+    transition: background 1s ease;
+
+    &:focus {
+      background-color: yellow;
+    }
   }
 }
 .pointer {
