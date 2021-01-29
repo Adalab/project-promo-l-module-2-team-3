@@ -3,9 +3,9 @@
 @import "layout/fill";
 @import "layout/share";
 .centralcolumn {
-  margin: 0 19px 0 20px;
+  margin: 17px 19px 0 20px;
   @include tablet() {
-    margin: 0 40px 0 40px;
+    margin: 17px 40px 0 40px;
   }
 }
 
@@ -51,10 +51,11 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 27px 0 0;
+  margin: 10px 0 10px;
   @include normal-text() {
   }
   @include tablet() {
+    margin: 10px 0 7px;
   }
   &__title {
     display: flex;
