@@ -96,6 +96,14 @@ function handlePhone(ev) {
 }
 telephone.addEventListener("keyup", handlePhone);
 
+function preventPhone(ev) {
+    console.log(ev);
+    if (telephone.value === "") {
+        ev.preventDefault();
+    }
+}
+previewTelephone.addEventListener("click", preventPhone);
+
 //Linkedin
 const linkedin = document.querySelector(".jslinkedin");
 const previewLinkedin = document.querySelector(".jslinkedinlink");
@@ -115,6 +123,14 @@ function handleLinkedin(ev) {
 
 }
 linkedin.addEventListener("keyup", handleLinkedin);
+
+function preventLinkedin(ev) {
+    console.log(ev);
+    if (linkedin.value === "") {
+        ev.preventDefault();
+    }
+}
+previewLinkedin.addEventListener("click", preventLinkedin);
 
 //Github
 const github = document.querySelector(".jsgithub");
@@ -139,3 +155,11 @@ function handleGithub(ev) {
     }
 }
 github.addEventListener("keyup", handleGithub);
+
+function preventGithub(ev) {
+    console.log(ev);
+    if (github.value === "") {
+        ev.preventDefault();
+    }
+}
+previewGithub.addEventListener("click", preventGithub);
