@@ -30,7 +30,6 @@ function handleName(ev) {
 fullName.addEventListener("keyup", handleName);
 
 //Job
-
 const jobElement = document.querySelector(".jsjob");
 const previewJob = document.querySelector(".jsjobpreview");
 
@@ -67,12 +66,11 @@ function handleMail(ev) {
 }
 mail.addEventListener("keyup", handleMail);
 
-//Para que no haga scroll al pulsar el icono cuando no hay mail puesto
-//QUE HACE ESTO???
-function preventLink(ev) {
-    console.log(ev);
+
+function preventLink(event) {
+    console.log(event);
     if (mail.value === "") {
-        ev.preventDefault();
+        event.preventDefault();
     }
 }
 previewMail.addEventListener("click", preventLink);
@@ -96,6 +94,14 @@ function handlePhone(ev) {
 }
 telephone.addEventListener("keyup", handlePhone);
 
+function preventTelephone(event) {
+    console.log(event);
+    if (telephone.value === "") {
+        event.preventDefault();
+    }
+}
+previewTelephone.addEventListener("click", preventTelephone);
+
 //Linkedin
 const linkedin = document.querySelector(".jslinkedin");
 const previewLinkedin = document.querySelector(".jslinkedinlink");
@@ -116,11 +122,19 @@ function handleLinkedin(ev) {
 }
 linkedin.addEventListener("keyup", handleLinkedin);
 
+function preventLinkedin(event) {
+    console.log(event);
+    if (linkedin.value === "") {
+        event.preventDefault();
+    }
+}
+previewLinkedin.addEventListener("click", preventLinkedin);
+
 //Github
 const github = document.querySelector(".jsgithub");
 const previewGithub = document.querySelector(".jsgithublink");
 
-function handleGithub(ev) {
+function handleGithub() {
     let githubValue = github.value;
     let newGithubValue = githubValue.replace('https://github.com/', '');
 
@@ -139,3 +153,11 @@ function handleGithub(ev) {
     }
 }
 github.addEventListener("keyup", handleGithub);
+
+function preventGithub(event) {
+    console.log(event);
+    if (github.value === "") {
+        event.preventDefault();
+    }
+}
+previewGithub.addEventListener("click", preventGithub);
