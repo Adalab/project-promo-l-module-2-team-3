@@ -106,6 +106,7 @@ function handleLinkedin() {
         previewLinkedin.href = `https://www.linkedin.com/in/${newLinkedinValue}`;
     }
 
+
 }
 linkedin.addEventListener("keyup", handleLinkedin);
 
@@ -115,13 +116,13 @@ const previewGithub = document.querySelector(".jsgithublink");
 
 function handleGithub() {
     let githubValue = github.value;
-    let NewGithubValue = githubValue.replace('https://github.com/', '');
+    let newGithubValue = githubValue.replace('https://github.com/', '');
 
 
     if (githubValue === "") {
         previewGithub.href = "#";
     } else {
-        previewGithub.href = `https://github.com/${NewGithubValue}`;
+        previewGithub.href = `https://github.com/${newGithubValue}`;
     }
 }
 github.addEventListener("keyup", handleGithub);
