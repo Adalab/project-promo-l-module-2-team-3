@@ -69,6 +69,7 @@ function handlePhone() {
         previewTelephone.href = `tel:${telephoneValue}`;
     }
 }
+<<<<<<< HEAD
 telephone.addEventListener('keyup', handlePhone);
 
 //Linkedin
@@ -108,3 +109,22 @@ function handleGithub() {
 
 }
 github.addEventListener('keyup', handleGithub);
+=======
+telephone.addEventListener("keyup", handlePhone);
+
+//SHARE
+/*
+const fullName = document.querySelector(".jsname");
+const previewName = document.querySelector(".jsnamepreview");
+
+function handleName() {
+  let nameValue = fullName.value;
+
+  if (nameValue === "") {
+    previewName.innerHTML = "Paquita Salas";
+  } else {
+    previewName.innerHTML = nameValue;
+  }
+}*/
+
+>>>>>>> pointer

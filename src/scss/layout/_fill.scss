@@ -3,6 +3,11 @@
   }
 }
 
+.line-dividing--fill {
+  height: 1px;
+  background-color: $color-lines;
+}
+
 .dropdownfillcontainer {
   box-sizing: border-box;
   width: 100%;
@@ -14,6 +19,9 @@
   width: 100%;
   outline: none;
   background-color: transparent;
+}
+.pointer {
+  cursor: pointer;
 }
 
 .form__container {
