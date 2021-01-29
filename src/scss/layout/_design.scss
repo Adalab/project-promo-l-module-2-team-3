@@ -1,69 +1,72 @@
 .design {
-    @include normal-text() {}
-    @include tablet() {}
+  @include normal-text() {
+  }
+  @include tablet() {
+  }
 }
 
 .design-btn {
-    border: none;
-    width: 100%;
-    outline: none;
+  border: none;
+  width: 100%;
+  outline: none;
+  background-color: transparent;
 }
 
 .colorcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 22px 0 30px;
+  &__title {
+    width: 62px;
+    height: 19px;
+    font-family: $font-main;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: $color-general-text;
+  }
+  &__Label {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 22px 0 30px;
-    &__title {
-        width: 62px;
-        height: 19px;
-        font-family: $font-main;
-        font-size: 14px;
-        font-weight: normal;
-        text-transform: uppercase;
-        color: $color-general-text;
+  }
+  &__option {
+    transform: translateY(50%);
+  }
+  &__palette {
+    display: flex;
+    margin-left: 10px;
+  }
+  &__square {
+    list-style-type: none;
+    width: 30px;
+    height: 25px;
+    margin-bottom: 20px;
+    &--color1-1 {
+      background-color: $option1-element1;
     }
-    &__Label {
-        display: flex;
+    &--color1-2 {
+      background-color: $option1-element2;
     }
-    &__option {
-        transform: translateY(50%);
+    &--color1-3 {
+      background-color: $option1-element3;
     }
-    &__palette {
-        display: flex;
-        margin-left: 10px;
+    &--color2-1 {
+      background-color: $option2-element1;
     }
-    &__square {
-        list-style-type: none;
-        width: 30px;
-        height: 25px;
-        margin-bottom: 20px;
-        &--color1-1 {
-            background-color: $option1-element1;
-        }
-        &--color1-2 {
-            background-color: $option1-element2;
-        }
-        &--color1-3 {
-            background-color: $option1-element3;
-        }
-        &--color2-1 {
-            background-color: $option2-element1;
-        }
-        &--color2-2 {
-            background-color: $option2-element2;
-        }
-        &--color2-3 {
-            background-color: $option2-element3;
-        }
-        &--color3-1 {
-            background-color: $option3-element1;
-        }
-        &--color3-2 {
-            background-color: $option3-element2;
-        }
-        &--color3-3 {
-            background-color: $option3-element3;
-        }
+    &--color2-2 {
+      background-color: $option2-element2;
     }
+    &--color2-3 {
+      background-color: $option2-element3;
+    }
+    &--color3-1 {
+      background-color: $option3-element1;
+    }
+    &--color3-2 {
+      background-color: $option3-element2;
+    }
+    &--color3-3 {
+      background-color: $option3-element3;
+    }
+  }
 }
