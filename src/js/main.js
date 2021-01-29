@@ -134,7 +134,7 @@ previewLinkedin.addEventListener("click", preventLinkedin);
 const github = document.querySelector(".jsgithub");
 const previewGithub = document.querySelector(".jsgithublink");
 
-function handleGithub() {
+function handleGithub(ev) {
     let githubValue = github.value;
     let newGithubValue = githubValue.replace('https://github.com/', '');
 
