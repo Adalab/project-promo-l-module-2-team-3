@@ -136,7 +136,6 @@ const github = document.querySelector(".jsgithub");
 const previewGithub = document.querySelector(".jsgithublink");
 
 function handleGithub(ev) {
-<<<<<<< HEAD
   let githubValue = github.value;
   let newGithubValue = githubValue.replace("https://github.com/", "");
 
@@ -152,24 +151,22 @@ function handleGithub(ev) {
     const shareBtn = document.querySelector(".jssharebtn");
     shareBtn.focus();
   }
-=======
-    let githubValue = github.value;
-    let newGithubValue = githubValue.replace('https://github.com/', '');
 
+  let githubValue = github.value;
+  let newGithubValue = githubValue.replace("https://github.com/", "");
 
-    if (githubValue === "") {
-        previewGithub.href = "#";
-    } else {
-        previewGithub.href = `https://github.com/${newGithubValue}`;
-    }
-    // check intro key
-    if (ev.keyCode === 13) {
-        const dropdownShareBtn = document.querySelector(".dropdownshare-btn");
-        dropdownShareBtn.click();
-        const shareBtn = document.querySelector(".jssharebtn");
-        shareBtn.focus();
-    }
->>>>>>> 43516420b3ad8b3850e31530b4d9a9bdd5a7b48f
+  if (githubValue === "") {
+    previewGithub.href = "#";
+  } else {
+    previewGithub.href = `https://github.com/${newGithubValue}`;
+  }
+  // check intro key
+  if (ev.keyCode === 13) {
+    const dropdownShareBtn = document.querySelector(".dropdownshare-btn");
+    dropdownShareBtn.click();
+    const shareBtn = document.querySelector(".jssharebtn");
+    shareBtn.focus();
+  }
 }
 github.addEventListener("keyup", handleGithub);
 
