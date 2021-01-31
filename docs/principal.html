@@ -14,7 +14,7 @@
     <link rel="icon" href="./assets/images/favicon.png">
 </head>
 
-<body>
+<body class="principal-body">
     <section class="header">
         <div>
             <div class="header__logo">
@@ -28,9 +28,9 @@
       <div class="divided__paquita">
         <section class="preview">
             <button class="reset"> <i class="fa fa-trash-alt" aria-hidden="true" alt="trash-can"></i> </i>Reset</button>
-            <section class="page">
-                <div class="container">
-                    <div class="container__main-texts">
+            <section class="page js-card">
+                <div class="container ">
+                    <div class="container__main-texts ">
                         <h2 class="container__main-texts--title jsnamepreview">Paquita Salas</h2>
                         <h3 class="container__main-texts--subtitle jsjobpreview">CEO PS Management</h3>
                     </div>
@@ -44,13 +44,13 @@
                             <i class="fas fa-mobile-alt link" aria-hidden="true" alt="icon-phone"></i>
                         </a>
                     </div>
-                    <div class="page__icons--icon">
+                    <div class="page__icons--icon ">
                         <a href="" class="link-icon jsmaillink">
                             <i class="far fa-envelope link" aria-hidden="true" alt="icon-mail"></i>
                         </a>
                     </div>
                     <div class="page__icons--icon">
-                        <a href="" class="link-icon jsinlink" target="_blank">
+                        <a href="" class="link-icon jslinkedinlink" target="_blank">
                             <i class="fab fa-linkedin-in link" aria-hidden="true" alt="icon-linkedin"></i>
                         </a>
                     </div>
@@ -69,7 +69,7 @@
       </div>
       <div class="centralcolumn divided__options">
         <section class="design">
-          <button type="button" name="button" class="design-btn dropdown-btn">
+          <button type="button" name="button" class="design-btn pointer dropdown-btn">
             <div class="dropdown">
               <div class="dropdown__title">
                 <span class="dropdown__icon dropdown__icon--left far fa-object-ungroup"></span>
@@ -82,8 +82,13 @@
             <h3 class="colorcontainer__title">Colores</h3>
             <div class="colorcontainer__colors">
               <label class="colorcontainer__Label">
-                <input class="colorcontainer__option" type="radio" name="palette" />
-                <ul class="colorcontainer__palette">
+                <input
+                  class="colorcontainer__option js-palette"
+                  type="radio"
+                  name="palette"
+                  value="1"
+                />
+                <ul class="colorcontainer__palette palette-1">
                   <li
                     class="colorcontainer__square colorcontainer__square--color1-1"
                   ></li>
@@ -97,8 +102,13 @@
               </label>
 
               <label class="colorcontainer__Label">
-                <input class="colorcontainer__option" type="radio" name="palette" />
-                <ul class="colorcontainer__palette">
+                <input
+                  class="colorcontainer__option js-palette"
+                  type="radio"
+                  name="palette"
+                  value="2"
+                />
+                <ul class="colorcontainer__palette palette-2">
                   <li
                     class="colorcontainer__square colorcontainer__square--color2-1"
                   ></li>
@@ -112,8 +122,13 @@
               </label>
 
               <label class="colorcontainer__Label">
-                <input class="colorcontainer__option" type="radio" name="palette" />
-                <ul class="colorcontainer__palette">
+                <input
+                  class="colorcontainer__option js-palette"
+                  type="radio"
+                  name="palette"
+                  value="3"
+                />
+                <ul class="colorcontainer__palette palette-3">
                   <li
                     class="colorcontainer__square colorcontainer__square--color3-1"
                   ></li>
@@ -125,12 +140,32 @@
                   ></li>
                 </ul>
               </label>
+              <label class="colorcontainer__Label">
+                <input
+                  class="colorcontainer__option js-palette"
+                  type="radio"
+                  name="palette"
+                  value="4"
+                />
+                <ul class="colorcontainer__palette palette-4">
+                  <li
+                    class="colorcontainer__square colorcontainer__square--color4-1"
+                  ></li>
+                  <li
+                    class="colorcontainer__square colorcontainer__square--color4-2"
+                  ></li>
+                  <li
+                    class="colorcontainer__square colorcontainer__square--color4-3"
+                  ></li>
+                </ul>
+              </label>
             </div>
           </div>
         </section>
 
         <section class="fill">
-            <button type="button" name="button" class="fill-btn dropdownfill-btn">
+          <div class="line-dividing--fill"></div>
+          <button type="button" name="button" class="fill-btn pointer dropdownfill-btn">
             <div class="dropdown">
               <div class="dropdown__title">
                 <span class="dropdown__icon dropdown__icon--left far fa-keyboard dropdown__icon "></span>
@@ -139,59 +174,75 @@
               <i class="fa fa-chevron-down js-arrow-fill dropdown__arrow"></i>
             </div>
           </button>
-            <div class="collapsable__content hidden dropdownfillcontainer">
-                <form class="form__container" action="/signup" method="POST">
-                    <div class="fill__container">
-                        <label class="form__label" for="name">Nombre completo</label>
-                        <input class="form__input jsname" placeholder="Ej: Paquita Salas" id="name" type="text" name="name" />
-                    </div>
-                    <div class="fill__container">
-                        <label class="form__label" for="job">Puesto</label>
-                        <input placeholder="Ej: CEO PS management" class="form__input jsjob" id="job" type="text" name="job" />
-                    </div>
-                    <div class="fill__container">
-                        <label class="form__label" for="photo">Imagen de perfil</label>
-                        <div class="image-form__container">
-                            <div class="button">
-                                <button class="button__form">Añadir imagen</button>
-                            </div>
-                            <!-- <input class="button-image" type="" value="Añadir imagen" /> -->
-                            <div class="small-image__container"></div>
-                        </div>
-                    </div>
-                    <div class="fill__container">
-                        <label class="form__label" for="email">Email</label>
-                        <input placeholder="Ej: email" class="form__input jsmail" id="email" type="email" name="email" />
-                    </div>
-                    <div class="fill__container">
-                        <label class="form__label" for="phone">Teléfono</label>
-                        <input placeholder="Ej: 555-452-369 " class="form__input jsphone" id="phone" type="tel" name="phone" />
-                    </div>
-                    <div class="fill__container">
-                        <label class="form__label" for="linkedin">Linkedin</label>
-                        <input placeholder="Ej: paquita.salas" class="form__input jsin" id="linkedin" type="text" name="linkedin" />
-                    </div>
-                    <div class="fill__container">
-                        <label class="form__label" for="github">Github</label>
-                        <input placeholder="Ej: @paquita-salas" class="form__input jsgithub" id="github" type="text" name="github" />
-                    </div>
-                </form>
-            </div>
+          <div class="collapsable__content hidden dropdownfillcontainer">
+            <form class="form__container jsform">
+              <div class="fill__container">
+                <label class="form__label" for="name">Nombre completo</label>
+                <input class="form__input jsname" placeholder="Ej: Paquita Salas" id="name" type="text" name="name" />
+              </div>
+              <div class="fill__container">
+                <label class="form__label" for="job">Puesto</label>
+                <input placeholder="Ej: CEO PS management" class="form__input jsjob" id="job" type="text" name="job" />
+              </div>
+              <div class="fill__container">
+                <label class="form__label" for="photo">Imagen de perfil</label>
+                <div class="image-form__container">
+                  <div class="button">
+                    <button class="button__form">Añadir imagen</button>
+                  </div>
+                  <!-- <input class="button-image" type="" value="Añadir imagen" /> -->
+                  <div class="small-image__container"></div>
+                </div>
+              </div>
+              <div class="fill__container">
+                <label class="form__label" for="email">Email</label>
+                <input placeholder="Ej: email" class="form__input jsmail" id="email" type="email" name="email" />
+              </div>
+              <div class="fill__container">
+                <label class="form__label" for="phone">Teléfono</label>
+                <input placeholder="Ej: 555-452-369 " class="form__input jsphone" id="phone" type="tel" name="phone" />
+              </div>
+              <div class="fill__container">
+                <label class="form__label" for="linkedin">Linkedin</label>
+                <input placeholder="Ej: linkedin.com/in/paquita.salas" class="form__input jslinkedin" id="linkedin" type=""
+                  name="linkedin" />
+              </div>
+              <div class="fill__container">
+                <label class="form__label" for="github">Github</label>
+                <input placeholder="Ej: @paquita-salas" class="form__input jsgithub" id="github" type="" name="github" />
+              </div>
+            </form>
+          </div>
+          <div class="line-dividing--fill"></div>
         </section>
         <section class="share">
-          <div class="dropdown">
-            <div class="dropdown__title">
-              <span class="dropdown__icon dropdown__icon--left fas fa-share-alt"></span>
-              <h2 class="dropdown__text">Comparte</h2>
-            </div class="sidebar">
-            <i class="fa fa-chevron-down js-arrow-share dropdown__arrow"></i>
-          </div>
-
-          <div class="share-button hidden">
-            <button class="share-button__create-card">
+          <button
+            type="button"
+            name="button"
+            class="share-btn pointer dropdownshare-btn"
+          >
+            <div class="dropdown">
+              <div class="dropdown__title">
+                <span class="dropdown__icon dropdown__icon--left fas fa-share-alt"></span>
+                <h2 class="dropdown__text">Comparte</h2>
+              </div class="sidebar">
+              <i class="fa fa-chevron-down js-arrow-share dropdown__arrow"></i>
+            </div>
+          </button>
+          <div class="share-button hidden dropdownsharecontainer">
+            <button class="share-button__create-card jssharebtn">
               <i class="far fa-address-card share__create card"></i> Crear tarjeta
             </button>
+            <p class="share-text">La tarjeta ha sido creada</p>
+            <div class="share-button-twitter--container">
+              <button class="share-button--twitter">
+                Compartir en twitter
+                <!--<a class="share__twitter--item" href="" target="_blank">-->
+                <i class="fab fa-twitter"></i>
+              </button>
+            </div>
           </div>
+          <div class="line-dividing"></div>
         </section>
 
       </div>
@@ -199,7 +250,7 @@
 
     <footer class="footer">
       <div class="footer__container">
-        <small class="copyright"> Awesome profile-card &copy 2021 </small>
+        <small class="copyright"> PS Management profile-card &copy 2021 </small>
         <a class="logo__container" href="https://adalab.es/" target="_blank" title="Adalab Home">
           <img class="logo" src="./assets/images/logo-adalab.png" alt="logo adalab" title="logo adalab" />
         </a>
