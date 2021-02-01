@@ -1,5 +1,6 @@
 .design {
   @include normal-text() {
+    cursor: pointer;
   }
   @include tablet() {
   }
@@ -10,9 +11,6 @@
   width: 100%;
   outline: none;
   background-color: transparent;
-}
-.pointer {
-  cursor: pointer;
 }
 
 .colorcontainer {
