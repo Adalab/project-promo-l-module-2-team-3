@@ -1,28 +1,19 @@
 <section class="share">
-  <button
-    type="button"
-    name="button"
-    class="share-btn pointer dropdownshare-btn"
-  >
-    <include
-      src="./dropdown.html"
-      title="Comparte"
-      icon="fas fa-share-alt"
-      arrow="js-arrow-share"
-    ></include>
-  </button>
-  <div class="share-button hidden dropdownsharecontainer">
-    <button class="share-button__create-card jssharebtn">
+    <!-- <button type="button" name="button" class="share-btn pointer dropdownshare-btn"> -->
+    <include src="./dropdown.html" title="Comparte" icon="fas fa-share-alt"></include>
+    <!-- </button> -->
+    <div class="share-button hidden dropdownsharecontainer dropdowncontainer">
+        <button class="share-button__create-card jssharebtn">
       <i class="far fa-address-card share__create card"></i> Crear tarjeta
     </button>
-    <p class="share-text">La tarjeta ha sido creada</p>
-    <div class="share-button-twitter--container">
-      <button class="share-button--twitter">
+        <p class="share-text">La tarjeta ha sido creada</p>
+        <div class="share-button-twitter--container">
+            <button class="share-button--twitter">
         Compartir en twitter
         <!--<a class="share__twitter--item" href="" target="_blank">-->
         <i class="fab fa-twitter"></i>
       </button>
+        </div>
     </div>
-  </div>
-  <div class="line-dividing"></div>
+    <div class="line-dividing"></div>
 </section>

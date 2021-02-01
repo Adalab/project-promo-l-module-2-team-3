@@ -1,5 +1,38 @@
 "use strict";
 
+const dropdownHeaders = document.querySelectorAll('.js-dropdown-header');
+
+function changeDropdown(ev) {
+    const header = ev.currentTarget;
+    const arrow = header.querySelector('.js-arrow');
+    const container = header.parentNode.querySelector('.dropdowncontainer');
+    const isClose = container.classList.contains('hidden');
+    // close all arrows
+    const allArrow = document.querySelectorAll('.js-arrow');
+    for (const arrow of allArrow) {
+        arrow.classList.remove("changeArrowDown");
+    }
+    // close all containers
+    const allContainers = document.querySelectorAll('.dropdowncontainer');
+    for (const container of allContainers) {
+        container.classList.add("hidden");
+    }
+    // toggle arrow
+    if (isClose) {
+        arrow.classList.add("changeArrowDown");
+        arrow.classList.remove("changeArrowUp");
+        container.classList.remove("hidden");
+    } else {
+        arrow.classList.remove("changeArrowDown");
+        arrow.classList.add("changeArrowUp");
+        container.classList.add("hidden");
+    }
+}
+
+for (const dropdownHeader of dropdownHeaders) {
+    dropdownHeader.addEventListener('click', changeDropdown)
+}
+/*
 const dropdownDesign = document.querySelector(".design");
 const dropdownFill = document.querySelector(".fill");
 const dropdownBtn = document.querySelector(".dropdown-btn");
@@ -69,3 +102,4 @@ function shareDropdown() {
 }
 
 dropdownShareBtn.addEventListener("click", shareDropdown);
+*/
