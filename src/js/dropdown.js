@@ -10,7 +10,7 @@ function changeDropdown(ev) {
     // close all arrows
     const allArrow = document.querySelectorAll('.js-arrow');
     for (const arrow of allArrow) {
-        arrow.classList.remove("changeArrowDown");
+        arrow.classList.remove("changeArrow");
     }
     // close all containers
     const allContainers = document.querySelectorAll('.dropdowncontainer');
@@ -19,11 +19,11 @@ function changeDropdown(ev) {
     }
     // toggle arrow
     if (isClose) {
-        arrow.classList.add("changeArrowDown");
+        arrow.classList.add("changeArrow");
         arrow.classList.remove("changeArrowUp");
         container.classList.remove("hidden");
     } else {
-        arrow.classList.remove("changeArrowDown");
+        arrow.classList.remove("changeArrow");
         arrow.classList.add("changeArrowUp");
         container.classList.add("hidden");
     }
