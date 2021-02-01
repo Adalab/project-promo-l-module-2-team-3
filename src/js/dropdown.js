@@ -35,6 +35,8 @@ function fillDropdown() {
     dropdownContainer.classList.add("hidden");
     dropdownShareContainer.classList.add("hidden");
     dropdownArrowFill.classList.add("changeArrowDown");
+    dropdownArrowDesign.classList.remove("changeArrowDown");
+    dropdownArrowDesign.classList.add("changeArrowUp");
   } else {
     dropdownFillContainer.classList.add("hidden");
     dropdownArrowFill.classList.remove("changeArrowDown");
@@ -49,6 +51,8 @@ function shareDropdown() {
     dropdownContainer.classList.add("hidden");
     dropdownFillContainer.classList.add("hidden");
     dropdownArrowShare.classList.add("changeArrowDown");
+    dropdownArrowFill.classList.remove("changeArrowDown");
+    dropdownArrowFill.classList.add("changeArrowUp");
   } else {
     dropdownShareContainer.classList.add("hidden");
     dropdownArrowShare.classList.remove("changeArrowDown");
@@ -56,22 +60,3 @@ function shareDropdown() {
   }
 }
 dropdownShareBtn.addEventListener("click", shareDropdown);
-
-/*
-function() {
-    var div = document.querySelector('container');
-    var icon = document.querySelector('icon');
-    var open = false;
-
-    div.addEventListener('click', function() {
-        if (open) {
-            icon.className = 'changeArrowUp';
-        } else {
-            icon.className = 'changeArrowDown';
-        }
-
-        open = !open;
-    });
-};*/
-
-/*prueba*/

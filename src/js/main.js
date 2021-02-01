@@ -151,7 +151,7 @@ function handleGithub(ev) {
     const shareBtn = document.querySelector(".jssharebtn");
     shareBtn.focus();
   }
-} 
+}
 github.addEventListener("keyup", handleGithub);
 
 function preventGithub(event) {
