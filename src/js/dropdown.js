@@ -21,6 +21,10 @@ function Dropdown() {
     dropdownFillContainer.classList.add("hidden");
     dropdownShareContainer.classList.add("hidden");
     dropdownArrowDesign.classList.add("changeArrowDown");
+    dropdownArrowFill.classList.remove("changeArrowDown");
+    dropdownArrowFill.classList.add("changeArrowUp");
+    dropdownArrowShare.classList.remove("changeArrowDown");
+    dropdownArrowShare.classList.add("changeArrowUp");
   } else {
     dropdownContainer.classList.add("hidden");
     dropdownArrowDesign.classList.remove("changeArrowDown");
@@ -37,6 +41,8 @@ function fillDropdown() {
     dropdownArrowFill.classList.add("changeArrowDown");
     dropdownArrowDesign.classList.remove("changeArrowDown");
     dropdownArrowDesign.classList.add("changeArrowUp");
+    dropdownArrowShare.classList.remove("changeArrowDown");
+    dropdownArrowShare.classList.add("changeArrowUp");
   } else {
     dropdownFillContainer.classList.add("hidden");
     dropdownArrowFill.classList.remove("changeArrowDown");
@@ -51,6 +57,8 @@ function shareDropdown() {
     dropdownContainer.classList.add("hidden");
     dropdownFillContainer.classList.add("hidden");
     dropdownArrowShare.classList.add("changeArrowDown");
+    dropdownArrowDesign.classList.remove("changeArrowDown");
+    dropdownArrowDesign.classList.add("changeArrowUp");
     dropdownArrowFill.classList.remove("changeArrowDown");
     dropdownArrowFill.classList.add("changeArrowUp");
   } else {
@@ -59,4 +67,5 @@ function shareDropdown() {
     dropdownArrowShare.classList.add("changeArrowUp");
   }
 }
+
 dropdownShareBtn.addEventListener("click", shareDropdown);
