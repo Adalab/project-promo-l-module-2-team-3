@@ -37,8 +37,9 @@
 
 .container {
   padding-top: 21px;
+  padding-bottom: 10px;
   &__main-texts {
-    border-left: solid 5px $background-button-index;
+    border-left: solid 5px $border-left;
     &--title {
       text-transform: capitalize;
       font-family: $font-principal;
@@ -67,9 +68,11 @@
   &__container {
     height: 210px;
     &--photo {
-      padding-top: 10px;
       height: 200px;
       width: 240px;
+      background-image: url(../images/paquita.png);
+      background-size: cover;
+      background-position: center;
     }
   }
   &__icons {

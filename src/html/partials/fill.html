@@ -1,9 +1,7 @@
 <section class="fill">
     <div class="line-dividing--fill"></div>
-    <!-- <button type="button" name="button" class="fill-btn pointer dropdownfill-btn"> -->
-    <include src="./dropdown.html" title="Rellena" icon="far fa-keyboard dropdown__icon ">
+    <include src="./dropdown.html" title="Rellena" icon="far fa-keyboard dropdown__icon " class="pointer">
     </include>
-    <!-- </button> -->
     <div class="collapsable__content hidden dropdownfillcontainer dropdowncontainer">
         <form class="form__container jsform">
             <div class="fill__container">
@@ -18,10 +16,10 @@
                 <label class="form__label" for="photo">Imagen de perfil</label>
                 <div class="image-form__container">
                     <div class="button">
-                        <button class="button__form">Añadir imagen</button>
+                        <button class="button__form js-buttonForm">Añadir imagen</button>
                     </div>
-                    <!--<input class="button-image" type="" value="Añadir imagen" /> -->
-                    <div class="small-image__container"></div>
+                    <input class="button-image js-inputPhoto" type="file" value="" />
+                    <div class="small-image__container js-smallPhoto"></div>
                 </div>
             </div>
             <div class="fill__container">

@@ -82,12 +82,17 @@
     font-size: 14px;
     font-family: $font-main;
     border: 0;
+    cursor: pointer;
+    &:focus {
+      outline: none;
+    }
   }
 }
 
 .button-image {
   padding-bottom: 3px 22px 7px 22px;
   background-color: $color-accent;
+  display: none;
 }
 
 .small-image__container {
@@ -95,4 +100,5 @@
   height: 30px;
   border: solid 1px $color-form-border;
   margin: 0px 91px 0 20px;
+  background-size: cover;
 }
