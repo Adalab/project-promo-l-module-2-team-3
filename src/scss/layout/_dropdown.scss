@@ -1,7 +1,7 @@
 .dropdowncontainer {
   overflow: hidden;
   max-height: 650px;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 .hidden {
@@ -16,7 +16,7 @@
   font-size: 18px;
   color: $color-general-text;
   transform: rotate(180deg);
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .dropdown {
@@ -56,6 +56,6 @@
     height: 18px;
     font-size: 18px;
     color: $color-general-text;
-    transition: transform 0.3s linear;
+    transition: transform 0.5s linear;
   }
 }
