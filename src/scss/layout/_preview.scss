@@ -38,7 +38,7 @@
 .container {
   padding-top: 21px;
   &__main-texts {
-    border-left: solid 5px $background-button-index;
+    border-left: solid 5px $border-left;
     &--title {
       text-transform: capitalize;
       font-family: $font-principal;
