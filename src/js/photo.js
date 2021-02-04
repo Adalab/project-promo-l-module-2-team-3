@@ -1,9 +1,9 @@
-'use strict';
+"use strict";
 const fr = new FileReader();
-const uploadBtn = document.querySelector('.js-buttonForm');
-const fileField = document.querySelector('.js-inputPhoto');
-const profileImage = document.querySelector('.js-smallPhoto');
-const profilePreview = document.querySelector('.js-previewPhoto');
+const uploadBtn = document.querySelector(".js-buttonForm");
+const fileField = document.querySelector(".js-inputPhoto");
+const profileImage = document.querySelector(".js-smallPhoto");
+const profilePreview = document.querySelector(".js-previewPhoto");
 /**
  * Recoge el archivo añadido al campo de tipo "file"
  * y lo carga en nuestro objeto FileReader para que
@@ -14,7 +14,7 @@ const profilePreview = document.querySelector('.js-previewPhoto');
  */
 function getImage(e) {
   const myFile = e.currentTarget.files[0];
-  fr.addEventListener('load', writeImage);
+  fr.addEventListener("load", writeImage);
   fr.readAsDataURL(myFile);
 }
 /**
@@ -35,13 +35,4 @@ function writeImage() {
  * Genera un click automático en nuesto campo de tipo "file"
  * que está oculto
  */
-function fakeFileClick() {
-  fileField.click();
-}
-/**
- * Añadimos los listeners necesarios:
- * - al botón visible para generar el click automático
- * - al campo oculto para cuando cambie su value
- */
-uploadBtn.addEventListener('click', fakeFileClick);
-fileField.addEventListener('change', getImage);
+fileField.addEventListener("change", getImage);
