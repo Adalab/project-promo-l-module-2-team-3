@@ -146,7 +146,7 @@ function handleGithub(ev) {
   }
   // check intro key
   if (ev.keyCode === 13) {
-    const dropdownShareBtn = document.querySelector(".dropdownshare-btn");
+    const dropdownShareBtn = document.querySelector(".prueba");
     dropdownShareBtn.click();
     const shareBtn = document.querySelector(".jssharebtn");
     shareBtn.focus();
