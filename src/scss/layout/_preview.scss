@@ -30,6 +30,10 @@
   border: solid 1px $color-button;
   position: relative;
   transform: translateX(-84px);
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
   @media all and (min-width: 768px) {
     margin-top: 173px;
   }
@@ -101,6 +105,14 @@
   &:visited {
     color: $color-form-text;
   }
+}
+
+.previewPhotoReset {
+  height: 200px;
+  width: 240px;
+  background-image: url(../images/paquita.png);
+  background-size: cover;
+  background-position: center;
 }
 
 //Cambio de colores al hacer selección en cada input
