@@ -15,21 +15,20 @@ const cardElement = document.querySelector(".js-card");
 //   paletteElement.addEventListener("change", handlePalette);
 // }
 
-function handlePalette(ev) {
-    // borro las clases palette-1, palette-2 y palette-3 del js-card
-    cardElement.classList.remove(
-        "palette-1",
-        "palette-2",
-        "palette-3",
-        "palette-4"
-    );
+function updatePalette() {
+  // borro las clases palette-1, palette-2 y palette-3 del js-card
+  cardElement.classList.remove(
+    "palette-1",
+    "palette-2",
+    "palette-3",
+    "palette-4"
+  );
 
-    // añado palette-x a js-card en función de la paleta seleccionada
-    const paletteValue = ev.currentTarget.value;
-    cardElement.classList.add("palette-" + paletteValue);
-    saveInLocalStorage();
+  // añado palette-x a js-card en función de la paleta seleccionada
+  const paletteValue = document.querySelector(".js-palette:checked").value;
+  cardElement.classList.add("palette-" + paletteValue);
+  saveInLocalStorage();
 }
 for (const paletteElement of paletteElements) {
-    paletteElement.addEventListener("change", handlePalette);
-
+  paletteElement.addEventListener("change", updatePalette);
 }

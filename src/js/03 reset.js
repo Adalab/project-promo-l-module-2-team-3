@@ -18,6 +18,15 @@ function handleDeleteForm() {
       inputElements[i].value = "";
     }
   }
+  photo = "";
+  handleName();
+  handleJob();
+  handleMail();
+  handlePhone();
+  handleLinkedin();
+  handleGithub();
+  updatePalette();
+  updatePhoto();
 }
 
 // function handleDeletePhoto() {
