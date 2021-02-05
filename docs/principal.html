@@ -27,7 +27,7 @@
     <section class="divided">
       <div class="divided__paquita">
         <section class="preview">
-            <button class="reset"> <i class="fa fa-trash-alt" aria-hidden="true" alt="trash-can"></i> </i>Reset</button>
+            <button class="reset js-reset"> <i class="fa fa-trash-alt" aria-hidden="true" alt="trash-can"></i> </i>Reset</button>
             <section class="page js-card">
                 <div class="container ">
                     <div class="container__main-texts ">
@@ -36,7 +36,7 @@
                     </div>
                 </div>
                 <div class="Page__container">
-                    <div class="page__container--photo js-previewPhoto"></div>
+                    <div class="page__container--photo js-previewPhoto js-previewPhotoReset "></div>
                 </div>
                 <section class="page__icons">
                     <div class="page__icons--icon">
@@ -84,6 +84,7 @@
                   class="colorcontainer__option js-palette"
                   type="radio"
                   name="palette"
+                  checked
                   value="1"
                 />
                 <ul class="colorcontainer__palette palette-1">
@@ -182,6 +183,7 @@
                   id="name"
                   type="text"
                   name="name"
+                  value=""
                 />
               </div>
               <div class="fill__container">
@@ -192,6 +194,7 @@
                   id="job"
                   type="text"
                   name="job"
+                  value=""
                 />
               </div>
               <div class="fill__container">
@@ -211,12 +214,14 @@
                     >
                   </div>
                   <input
-                    class="button-image js-inputPhoto"
+                    class="form__input button-image js-inputPhoto"
                     type="file"
                     value=""
                     id="photo"
                   />
-                  <div class="small-image__container js-smallPhoto"></div>
+                  <div
+                    class="small-image__container js-smallPhoto js-resetSmallphoto"
+                  ></div>
                 </div>
               </div>
               <div class="fill__container">
@@ -227,6 +232,7 @@
                   id="email"
                   type="email"
                   name="email"
+                  value=""
                 />
               </div>
               <div class="fill__container">
@@ -237,6 +243,7 @@
                   id="phone"
                   type="tel"
                   name="phone"
+                  value=""
                 />
               </div>
               <div class="fill__container">
@@ -247,6 +254,7 @@
                   id="linkedin"
                   type=""
                   name="linkedin"
+                  value=""
                 />
               </div>
               <div class="fill__container">
@@ -257,6 +265,7 @@
                   id="github"
                   type=""
                   name="github"
+                  value=""
                 />
               </div>
             </form>
