@@ -25,7 +25,7 @@ Algo que no nos gustaría olvidar es la herramienta **Kanban** que nos ha ayudad
 ## Autoras
 Como hemos dicho antes, somos cuatro chicas empezando en la programación JavaScript (Que no JAVA), pero que paso a paso hemos creado esta web tan
 
-- [Cristinaa González](https://www.linkedin.com/in/)
+- [Cristina González](https://www.linkedin.com/in/cristina-glez-ruiz)
 - [Liliana Mendoza](http://www.linkedin.com/in/lilymenal)
 - [María Virumbrales](https://www.linkedin.com/in/.../)
 - [Marta Cano](https://www.linkedin.com/in/martacacio/)
