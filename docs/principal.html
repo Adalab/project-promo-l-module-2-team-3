@@ -1,20 +1,26 @@
-<!-- Página de diseño -->
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PS Management</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/principal.css" />
-    <link rel="icon" href="./assets/images/favicon.png">
-</head>
+    <link rel="icon" href="./assets/images/favicon.png" />
+  </head>
 
-<body class="principal-body">
+  <body class="principal-body">
     <section class="header">
         <div>
             <div class="header__logo">
@@ -69,7 +75,7 @@
       </div>
       <div class="centralcolumn divided__options">
         <section class="design">
-          <div class="dropdown js-dropdown-header pointer ">
+          <div class="dropdown js-dropdown-header ">
               <div class="dropdown__title">
                   <span class="dropdown__icon dropdown__icon--left far fa-object-ungroup"></span>
                   <h2 class="dropdown__text">Diseña</h2>
@@ -164,7 +170,7 @@
 
         <section class="fill">
           <div class="line-dividing--fill"></div>
-          <div class="dropdown js-dropdown-header pointer ">
+          <div class="dropdown js-dropdown-header ">
               <div class="dropdown__title">
                   <span class="dropdown__icon dropdown__icon--left far fa-keyboard dropdown__icon "></span>
                   <h2 class="dropdown__text">Rellena</h2>
@@ -198,14 +204,6 @@
                 />
               </div>
               <div class="fill__container">
-                <!--<label class="form__label" for="photo">Imagen de perfil</label>
-                <div class="image-form__container">
-                  <div class="button">
-                    <button class="button__form js-buttonForm">Añadir imagen</button>
-                  </div>
-                  <input class="button-image js-inputPhoto" type="file" value="" />
-                  <div class="small-image__container js-smallPhoto"></div>
-                </div>-->
                 <label class="form__label" for="photo">Imagen de perfil</label>
                 <div class="image-form__container">
                   <div class="button">
@@ -227,7 +225,7 @@
               <div class="fill__container">
                 <label class="form__label" for="email">Email</label>
                 <input
-                  placeholder="Ej: email"
+                  placeholder="Ej: nombre.apellidos@email.com"
                   class="form__input jsmail"
                   id="email"
                   type="email"
@@ -274,15 +272,13 @@
         </section>
 
         <section class="share">
-          <!-- <button type="button" name="button" class="share-btn pointer dropdownshare-btn"> -->
-          <div class="dropdown js-dropdown-header pointer dropdownshare-btn">
+          <div class="dropdown js-dropdown-header dropdownshare-btn">
               <div class="dropdown__title">
                   <span class="dropdown__icon dropdown__icon--left fas fa-share-alt"></span>
                   <h2 class="dropdown__text">Comparte</h2>
               </div class="sidebar">
               <i class="fa fa-chevron-down js-arrow dropdown__arrow"></i>
           </div>
-          <!-- </button> -->
           <div class="share-button hidden dropdownsharecontainer dropdowncontainer">
             <button class="share-button__create-card jssharebtn">
               <i class="far fa-address-card share__create card"></i> Crear tarjeta
@@ -291,7 +287,6 @@
             <div class="share-button-twitter--container">
               <button class="share-button--twitter">
                 Compartir en twitter
-                <!--<a class="share__twitter--item" href="" target="_blank">-->
                 <i class="fab fa-twitter"></i>
               </button>
             </div>
@@ -312,6 +307,5 @@
     </footer>
 
     <script type="text/javascript" src="./assets/js/main.js"></script>
-</body>
-
+  </body>
 </html>
