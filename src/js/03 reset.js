@@ -31,13 +31,8 @@ function handleDeleteForm() {
 }
 
 function handleResetDesignPreview() {
-  //Volver a palette-1 en preview
-  cardElement.classList.remove(
-    "palette-1",
-    "palette-2",
-    "palette-3",
-    "palette-4"
-  );
+  const paletteValue = document.querySelector(".js-palette:checked").value;
+  cardElement.classList.remove("palette-" + paletteValue);
 }
 
 function handleResetDesignValue() {

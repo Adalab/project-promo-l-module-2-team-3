@@ -64,7 +64,6 @@ function getFromLocalStorage() {
       }
     }
     // propago los datos desde el formulario a la tarjeta
-    //updateAllInputs();
     handleName();
     handleJob();
     handleMail();
@@ -73,18 +72,6 @@ function getFromLocalStorage() {
     handleGithub();
     updatePalette();
     updatePhoto();
+    handleDelete();
   }
 }
-
-/*
-Para actualizar la paleta hay otras dos formas de hacerlo:
-1º Le pongo a cada radio button de las paletas la clase .palette-1, .palette-2 y .palette-3 y ejecuto
-document.querySelector(`.js-palette-${userData.palette}`).checked = true;
-2º Hasta ahora hemos utilizado selectores de id, etiqueta y clase para seleccionar elementos
-Hay más formas de hacerlo por ejemplo si pongo: document.querySelector('.js-palette[value="2"]')
-estoy seleccionando el elemento que tiene la clase .js-palette y que además tiene un atributo que se llama
-value y que tiene el valor 2.
-Por ello en la función getFromLocalStorage podría haber usado :
-document.querySelector(`.js-palette[value="${userData.palette}"]`).checked = true;
-Más info de selectores de atributos: https://developer.mozilla.org/es/docs/Web/CSS/Selectores_atributo
-*/
