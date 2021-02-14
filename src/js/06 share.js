@@ -9,7 +9,7 @@ const twitterButton = document.querySelector(".jstwitterbutton");
 
 function handleShare() {
   shareBtn.classList.add("button-backgroundcolor");
-  const urlServe = "https://profileawesome.herokuapp.com/card";
+  const urlServe = "https://awesome-profile-cards.herokuapp.com/card";
   const data = getUserData();
   fetch(urlServe, {
     method: "POST",
