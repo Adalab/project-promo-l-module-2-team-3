@@ -44,12 +44,18 @@ function handleJob(ev) {
   }
 
   if (ev && ev.keyCode === 13) {
-    mail.focus();
+    uploadBtn.click();
+    if (profileImage !== "") {
+      mail.focus();
+    }
   }
+
   saveInLocalStorage();
 }
 
 jobElement.addEventListener("keyup", handleJob);
+
+//Photo
 
 //Mail
 const mail = document.querySelector(".jsmail");

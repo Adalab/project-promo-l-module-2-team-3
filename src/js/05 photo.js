@@ -15,6 +15,16 @@ const profilePreview = document.querySelector(".js-previewPhoto");
  */
 let photo = "";
 
+/*//Photo with keyVode 13-Intro
+function handlePhoto(ev) {
+  if (ev && ev.keyCode === 13) {
+    mail.focus();
+  }
+  saveInLocalStorage();
+}
+handleMail();
+fileField.addEventListener("keyup", handlePhoto);*/
+
 function getImage(e) {
   const myFile = e.currentTarget.files[0];
   fr.addEventListener("load", writeImage);
