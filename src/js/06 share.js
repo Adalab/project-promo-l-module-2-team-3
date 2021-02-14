@@ -10,8 +10,8 @@ const twitterButton = document.querySelector (".jstwitterbutton");
 
 
 
-function handleShare(ev) {
-shareBtn.style.backgroundColor = "grey";
+function handleShare() {
+shareBtn.classList.add("button-backgroundcolor");
     const urlServe = 'https://profileawesome.herokuapp.com/card'; 
     const data = getUserData();
         fetch(urlServe, {
@@ -29,8 +29,11 @@ shareBtn.style.backgroundColor = "grey";
                 linkUrl.href = data.cardURL;
                 const urlTwitter = data.cardURL;
                 twitterUrl.href = `https://twitter.com/intent/tweet?url=Échale%20un%20vistazo%20a%20mi%20tarjeta%20virtual%20${urlTwitter}`;    
-                } else{
+                twitterButton.classList.remove("twitterhidden");
+            } else{
                 textUrl.innerHTML = "Ups! No se ha podido crear tu tarjeta.";
+                linkUrl.href = "";
+                twitterButton.classList.add("twitterhidden");
             }
             });    
 }
