@@ -44,9 +44,8 @@ function handleResetDesignValue() {
 }
 
 function handleResetShare() {
-  linksContainer.classList.add('share__hidden');
+  linksContainer.classList.add("share__hidden");
   shareBtn.classList.remove("button-backgroundcolor");
-  
 }
 
 deleteButton.addEventListener("click", handleDelete);
