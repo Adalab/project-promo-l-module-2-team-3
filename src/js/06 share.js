@@ -4,6 +4,8 @@ const shareBtn = document.querySelector(".jssharebtn");
 const linksContainer = document.querySelector (".jssharelinks");
 const textUrl = document.querySelector (".jsShareText");
 const linkUrl = document.querySelector (".jsUrl");
+const twitterUrl = document.querySelector (".jsTwitter");
+const twitterButton = document.querySelector (".jstwitterbutton");
 
 
 
@@ -24,13 +26,14 @@ shareBtn.style.backgroundColor = "grey";
             if (data.success === true) {
                 textUrl.innerHTML = "La tarjeta ha sido creada:"; 
                 linkUrl.innerHTML = data.cardURL;
-            } else{
+                linkUrl.href = data.cardURL;
+                const urlTwitter = data.cardURL;
+                twitterUrl.href = `https://twitter.com/intent/tweet?url=Échale%20un%20vistazo%20a%20mi%20tarjeta%20virtual%20${urlTwitter}`;    
+                } else{
                 textUrl.innerHTML = "Ups! No se ha podido crear tu tarjeta.";
             }
-
-
-            console.log (data);
             });    
 }
 
 shareBtn.addEventListener ('click', handleShare)
+
