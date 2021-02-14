@@ -11,6 +11,7 @@ function handleDelete() {
   handleDeleteForm();
   handleResetDesignPreview();
   handleResetDesignValue();
+  handleResetShare();
   saveInLocalStorage();
 }
 
@@ -40,6 +41,12 @@ function handleResetDesignValue() {
   const palettetoReset = document.querySelector(".js-palette:checked");
   palettetoReset.checked = false;
   paletteInput1.checked = true;
+}
+
+function handleResetShare() {
+  linksContainer.classList.add('share__hidden');
+  shareBtn.classList.remove("button-backgroundcolor");
+  
 }
 
 deleteButton.addEventListener("click", handleDelete);
