@@ -79,7 +79,6 @@ function handleMail(ev) {
 mail.addEventListener("keyup", handleMail);
 
 function preventLink(event) {
-  console.log(event);
   if (mail.value === "") {
     event.preventDefault();
   }
@@ -110,7 +109,6 @@ function handlePhone(ev) {
 telephone.addEventListener("keyup", handlePhone);
 
 function preventTelephone(event) {
-  console.log(event);
   if (telephone.value === "") {
     event.preventDefault();
   }
@@ -145,7 +143,6 @@ function handleLinkedin(ev) {
 linkedin.addEventListener("keyup", handleLinkedin);
 
 function preventLinkedin(event) {
-  console.log(event);
   if (linkedin.value === "") {
     event.preventDefault();
   }

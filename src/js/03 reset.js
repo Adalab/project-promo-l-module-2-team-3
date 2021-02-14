@@ -2,10 +2,7 @@
 
 const deleteButton = document.querySelector(".js-reset");
 const inputElements = document.querySelectorAll(".form__input");
-const smallPhoto = document.querySelector(".js-resetSmallphoto");
 const previewPhoto = document.querySelector(".js-previewPhotoReset");
-
-console.log(inputElements);
 
 function handleDelete() {
   handleDeleteForm();
@@ -44,9 +41,8 @@ function handleResetDesignValue() {
 }
 
 function handleResetShare() {
-  linksContainer.classList.add('share__hidden');
+  linksContainer.classList.add("share__hidden");
   shareBtn.classList.remove("button-backgroundcolor");
-  
 }
 
 deleteButton.addEventListener("click", handleDelete);
