@@ -47,8 +47,15 @@
   font-style: normal;
   line-height: 20px;
   letter-spacing: normal;
+  text-align: center;
+  margin-bottom: 5px;
 }
 
+.urlcard {
+  text-decoration: none;
+  color: $color-accent;
+  text-align: center;
+}
 .share-button-twitter--container {
   display: flex;
   flex-direction: column;
@@ -73,6 +80,10 @@
   border: 0;
   margin: 30px 0 30px 0;
 }
+.twitterlink {
+  text-decoration: none;
+  color: $color-button;
+}
 
 .fa-twitter {
   width: 18px;
@@ -91,6 +102,7 @@
 .line-dividing {
   height: 1px;
   background-color: $color-lines;
+  margin-top: 5px;
 }
 .share__hidden {
   display: none;
