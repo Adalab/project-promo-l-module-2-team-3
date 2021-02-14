@@ -181,15 +181,3 @@ function preventGithub(event) {
   }
   saveInLocalStorage();
 }
-
-/*
-//Change color icons
-function colorIconMail() {
-    const iconContainers = document.querySelectorAll('.page__icons--icon');
-    for (const iconContainer of iconContainers) {
-        if (mailValue !== "") {
-            iconContainer.classList.add('full-icon')
-        }
-    }
-    saveInLocalStorage();
-}*/

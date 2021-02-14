@@ -72,6 +72,5 @@ function getFromLocalStorage() {
     handleGithub();
     updatePalette();
     updatePhoto();
-    handleDelete();
   }
 }
