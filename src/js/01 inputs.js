@@ -175,7 +175,6 @@ function handleGithub(ev) {
 github.addEventListener("keyup", handleGithub);
 
 function preventGithub(event) {
-  console.log(event);
   if (github.value === "") {
     event.preventDefault();
   }
